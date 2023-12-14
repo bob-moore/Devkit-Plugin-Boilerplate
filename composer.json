@@ -1,6 +1,6 @@
 {
-    "name": "mwf/child-theme",
-    "description": "Create Wordpress child themes",
+    "name": "devkit/plugin-boilerplate",
+    "description": "Boilerplate for WP plugins",
     "type": "library",
     "license": "GPL-2.0+ <http://www.gnu.org/licenses/gpl-2.0.txt>",
 	"minimum-stability": "dev",
