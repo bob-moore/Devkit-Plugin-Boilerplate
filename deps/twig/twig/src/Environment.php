@@ -8,29 +8,29 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig;
+namespace PLUGIN_NAMESPACE\Deps\Twig;
 
-use Devkit\Plugin\Deps\Twig\Cache\CacheInterface;
-use Devkit\Plugin\Deps\Twig\Cache\FilesystemCache;
-use Devkit\Plugin\Deps\Twig\Cache\NullCache;
-use Devkit\Plugin\Deps\Twig\Error\Error;
-use Devkit\Plugin\Deps\Twig\Error\LoaderError;
-use Devkit\Plugin\Deps\Twig\Error\RuntimeError;
-use Devkit\Plugin\Deps\Twig\Error\SyntaxError;
-use Devkit\Plugin\Deps\Twig\Extension\CoreExtension;
-use Devkit\Plugin\Deps\Twig\Extension\EscaperExtension;
-use Devkit\Plugin\Deps\Twig\Extension\ExtensionInterface;
-use Devkit\Plugin\Deps\Twig\Extension\OptimizerExtension;
-use Devkit\Plugin\Deps\Twig\Loader\ArrayLoader;
-use Devkit\Plugin\Deps\Twig\Loader\ChainLoader;
-use Devkit\Plugin\Deps\Twig\Loader\LoaderInterface;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Binary\AbstractBinary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Unary\AbstractUnary;
-use Devkit\Plugin\Deps\Twig\Node\ModuleNode;
-use Devkit\Plugin\Deps\Twig\Node\Node;
-use Devkit\Plugin\Deps\Twig\NodeVisitor\NodeVisitorInterface;
-use Devkit\Plugin\Deps\Twig\RuntimeLoader\RuntimeLoaderInterface;
-use Devkit\Plugin\Deps\Twig\TokenParser\TokenParserInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Cache\CacheInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Cache\FilesystemCache;
+use PLUGIN_NAMESPACE\Deps\Twig\Cache\NullCache;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\Error;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\LoaderError;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\RuntimeError;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\SyntaxError;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\CoreExtension;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\EscaperExtension;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\ExtensionInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\OptimizerExtension;
+use PLUGIN_NAMESPACE\Deps\Twig\Loader\ArrayLoader;
+use PLUGIN_NAMESPACE\Deps\Twig\Loader\ChainLoader;
+use PLUGIN_NAMESPACE\Deps\Twig\Loader\LoaderInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Binary\AbstractBinary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Unary\AbstractUnary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\ModuleNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor\NodeVisitorInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\RuntimeLoader\RuntimeLoaderInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\TokenParser\TokenParserInterface;
 /**
  * Stores the Twig configuration and renders templates.
  *

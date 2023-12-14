@@ -1,31 +1,31 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI;
+namespace PLUGIN_NAMESPACE\Deps\DI;
 
-use Devkit\Plugin\Deps\DI\Definition\Definition;
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidDefinition;
-use Devkit\Plugin\Deps\DI\Definition\FactoryDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Helper\DefinitionHelper;
-use Devkit\Plugin\Deps\DI\Definition\InstanceDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Resolver\DefinitionResolver;
-use Devkit\Plugin\Deps\DI\Definition\Resolver\ResolverDispatcher;
-use Devkit\Plugin\Deps\DI\Definition\Source\DefinitionArray;
-use Devkit\Plugin\Deps\DI\Definition\Source\MutableDefinitionSource;
-use Devkit\Plugin\Deps\DI\Definition\Source\ReflectionBasedAutowiring;
-use Devkit\Plugin\Deps\DI\Definition\Source\SourceChain;
-use Devkit\Plugin\Deps\DI\Definition\ValueDefinition;
-use Devkit\Plugin\Deps\DI\Invoker\DefinitionParameterResolver;
-use Devkit\Plugin\Deps\DI\Proxy\ProxyFactory;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\FactoryDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Helper\DefinitionHelper;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\InstanceDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Resolver\DefinitionResolver;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Resolver\ResolverDispatcher;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\DefinitionArray;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\MutableDefinitionSource;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\ReflectionBasedAutowiring;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\SourceChain;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ValueDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Invoker\DefinitionParameterResolver;
+use PLUGIN_NAMESPACE\Deps\DI\Proxy\ProxyFactory;
 use InvalidArgumentException;
-use Devkit\Plugin\Deps\Invoker\Invoker;
-use Devkit\Plugin\Deps\Invoker\InvokerInterface;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\AssociativeArrayResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\Container\TypeHintContainerResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\DefaultValueResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\NumericArrayResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\ResolverChain;
+use PLUGIN_NAMESPACE\Deps\Invoker\Invoker;
+use PLUGIN_NAMESPACE\Deps\Invoker\InvokerInterface;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\AssociativeArrayResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\Container\TypeHintContainerResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\DefaultValueResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\NumericArrayResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\ResolverChain;
 use Psr\Container\ContainerInterface;
 /**
  * Dependency Injection Container.

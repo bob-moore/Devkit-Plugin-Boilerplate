@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Test;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Test;
 
-use Devkit\Plugin\Deps\PHPUnit\Framework\TestCase;
-use Devkit\Plugin\Deps\Twig\Compiler;
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Loader\ArrayLoader;
-use Devkit\Plugin\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\PHPUnit\Framework\TestCase;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Loader\ArrayLoader;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
 /** @internal */
 abstract class NodeTestCase extends TestCase
 {

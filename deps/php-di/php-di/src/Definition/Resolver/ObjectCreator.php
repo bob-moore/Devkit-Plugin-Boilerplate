@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Resolver;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Resolver;
 
-use Devkit\Plugin\Deps\DI\Definition\Definition;
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\PropertyInjection;
-use Devkit\Plugin\Deps\DI\DependencyException;
-use Devkit\Plugin\Deps\DI\Proxy\ProxyFactory;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\PropertyInjection;
+use PLUGIN_NAMESPACE\Deps\DI\DependencyException;
+use PLUGIN_NAMESPACE\Deps\DI\Proxy\ProxyFactory;
 use Exception;
-use Devkit\Plugin\Deps\ProxyManager\Proxy\LazyLoadingInterface;
+use PLUGIN_NAMESPACE\Deps\ProxyManager\Proxy\LazyLoadingInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use ReflectionClass;
 use ReflectionProperty;

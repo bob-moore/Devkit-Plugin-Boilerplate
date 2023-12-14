@@ -9,9 +9,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig;
+namespace PLUGIN_NAMESPACE\Deps\Twig;
 
-use Devkit\Plugin\Deps\Twig\Error\SyntaxError;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\SyntaxError;
 /**
  * Represents a token stream.
  *

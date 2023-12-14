@@ -8,19 +8,19 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Node\Expression\Test;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Test;
 
-use Devkit\Plugin\Deps\Twig\Compiler;
-use Devkit\Plugin\Deps\Twig\Error\SyntaxError;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ArrayExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\BlockReferenceExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ConstantExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\FunctionExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\GetAttrExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\MethodCallExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\NameExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\TestExpression;
-use Devkit\Plugin\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\SyntaxError;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ArrayExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\BlockReferenceExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ConstantExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\FunctionExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\GetAttrExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\MethodCallExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\NameExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\TestExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
 /**
  * Checks if a variable is defined in the current context.
  *

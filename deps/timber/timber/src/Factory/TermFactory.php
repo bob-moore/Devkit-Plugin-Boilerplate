@@ -1,10 +1,10 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Factory;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Factory;
 
 use InvalidArgumentException;
-use Devkit\Plugin\Deps\Timber\CoreInterface;
-use Devkit\Plugin\Deps\Timber\Term;
+use PLUGIN_NAMESPACE\Deps\Timber\CoreInterface;
+use PLUGIN_NAMESPACE\Deps\Timber\Term;
 use WP_Term;
 use WP_Term_Query;
 /**

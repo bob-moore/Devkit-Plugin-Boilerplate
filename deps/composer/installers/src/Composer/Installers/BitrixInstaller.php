@@ -1,8 +1,8 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Composer\Installers;
+namespace PLUGIN_NAMESPACE\Deps\Composer\Installers;
 
-use Devkit\Plugin\Deps\Composer\Util\Filesystem;
+use PLUGIN_NAMESPACE\Deps\Composer\Util\Filesystem;
 /**
  * Installer for Bitrix Framework. Supported types of extensions:
  * - `bitrix-d7-module` — copy the module to directory `bitrix/modules/<vendor>.<name>`.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Cache;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Cache;
 
-use Devkit\Plugin\Deps\Timber\Loader;
+use PLUGIN_NAMESPACE\Deps\Timber\Loader;
 /**
  * Class Cleaner
  *

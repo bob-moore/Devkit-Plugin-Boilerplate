@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Proxy;
+namespace PLUGIN_NAMESPACE\Deps\DI\Proxy;
 
-use Devkit\Plugin\Deps\ProxyManager\Configuration;
-use Devkit\Plugin\Deps\ProxyManager\Factory\LazyLoadingValueHolderFactory;
-use Devkit\Plugin\Deps\ProxyManager\FileLocator\FileLocator;
-use Devkit\Plugin\Deps\ProxyManager\GeneratorStrategy\EvaluatingGeneratorStrategy;
-use Devkit\Plugin\Deps\ProxyManager\GeneratorStrategy\FileWriterGeneratorStrategy;
-use Devkit\Plugin\Deps\ProxyManager\Proxy\LazyLoadingInterface;
+use PLUGIN_NAMESPACE\Deps\ProxyManager\Configuration;
+use PLUGIN_NAMESPACE\Deps\ProxyManager\Factory\LazyLoadingValueHolderFactory;
+use PLUGIN_NAMESPACE\Deps\ProxyManager\FileLocator\FileLocator;
+use PLUGIN_NAMESPACE\Deps\ProxyManager\GeneratorStrategy\EvaluatingGeneratorStrategy;
+use PLUGIN_NAMESPACE\Deps\ProxyManager\GeneratorStrategy\FileWriterGeneratorStrategy;
+use PLUGIN_NAMESPACE\Deps\ProxyManager\Proxy\LazyLoadingInterface;
 /**
  * Creates proxy classes.
  *

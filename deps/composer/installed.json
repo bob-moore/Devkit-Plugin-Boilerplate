@@ -206,8 +206,8 @@
             ],
             "authors": [
                 {
-                    "name": "Bob Moore",
-                    "email": "bob@bobmoore.dev"
+                    "name": "AUTHOR_NAME",
+                    "email": "AUTHOR_EMAIL"
                 }
             ],
             "description": "WP Plugin\/Theme Core Framework",

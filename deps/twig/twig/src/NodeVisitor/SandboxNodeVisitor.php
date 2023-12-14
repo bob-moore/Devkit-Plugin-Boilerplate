@@ -8,22 +8,22 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\NodeVisitor;
+namespace PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor;
 
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Node\CheckSecurityCallNode;
-use Devkit\Plugin\Deps\Twig\Node\CheckSecurityNode;
-use Devkit\Plugin\Deps\Twig\Node\CheckToStringNode;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Binary\ConcatBinary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Binary\RangeBinary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\FilterExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\FunctionExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\GetAttrExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\NameExpression;
-use Devkit\Plugin\Deps\Twig\Node\ModuleNode;
-use Devkit\Plugin\Deps\Twig\Node\Node;
-use Devkit\Plugin\Deps\Twig\Node\PrintNode;
-use Devkit\Plugin\Deps\Twig\Node\SetNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\CheckSecurityCallNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\CheckSecurityNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\CheckToStringNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Binary\ConcatBinary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Binary\RangeBinary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\FilterExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\FunctionExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\GetAttrExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\NameExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\ModuleNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\PrintNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\SetNode;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  *

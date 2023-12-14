@@ -9,21 +9,21 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig;
+namespace PLUGIN_NAMESPACE\Deps\Twig;
 
-use Devkit\Plugin\Deps\Twig\Error\SyntaxError;
-use Devkit\Plugin\Deps\Twig\Node\BlockNode;
-use Devkit\Plugin\Deps\Twig\Node\BlockReferenceNode;
-use Devkit\Plugin\Deps\Twig\Node\BodyNode;
-use Devkit\Plugin\Deps\Twig\Node\Expression\AbstractExpression;
-use Devkit\Plugin\Deps\Twig\Node\MacroNode;
-use Devkit\Plugin\Deps\Twig\Node\ModuleNode;
-use Devkit\Plugin\Deps\Twig\Node\Node;
-use Devkit\Plugin\Deps\Twig\Node\NodeCaptureInterface;
-use Devkit\Plugin\Deps\Twig\Node\NodeOutputInterface;
-use Devkit\Plugin\Deps\Twig\Node\PrintNode;
-use Devkit\Plugin\Deps\Twig\Node\TextNode;
-use Devkit\Plugin\Deps\Twig\TokenParser\TokenParserInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\SyntaxError;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\BlockNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\BlockReferenceNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\BodyNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\AbstractExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\MacroNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\ModuleNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\NodeCaptureInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\NodeOutputInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\PrintNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\TextNode;
+use PLUGIN_NAMESPACE\Deps\Twig\TokenParser\TokenParserInterface;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  * @internal

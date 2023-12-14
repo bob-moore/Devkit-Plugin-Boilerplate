@@ -1,16 +1,16 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Composer\Installers;
+namespace PLUGIN_NAMESPACE\Deps\Composer\Installers;
 
-use Devkit\Plugin\Deps\Composer\Composer;
-use Devkit\Plugin\Deps\Composer\Installer\BinaryInstaller;
-use Devkit\Plugin\Deps\Composer\Installer\LibraryInstaller;
-use Devkit\Plugin\Deps\Composer\IO\IOInterface;
-use Devkit\Plugin\Deps\Composer\Package\Package;
-use Devkit\Plugin\Deps\Composer\Package\PackageInterface;
-use Devkit\Plugin\Deps\Composer\Repository\InstalledRepositoryInterface;
-use Devkit\Plugin\Deps\Composer\Util\Filesystem;
-use Devkit\Plugin\Deps\React\Promise\PromiseInterface;
+use PLUGIN_NAMESPACE\Deps\Composer\Composer;
+use PLUGIN_NAMESPACE\Deps\Composer\Installer\BinaryInstaller;
+use PLUGIN_NAMESPACE\Deps\Composer\Installer\LibraryInstaller;
+use PLUGIN_NAMESPACE\Deps\Composer\IO\IOInterface;
+use PLUGIN_NAMESPACE\Deps\Composer\Package\Package;
+use PLUGIN_NAMESPACE\Deps\Composer\Package\PackageInterface;
+use PLUGIN_NAMESPACE\Deps\Composer\Repository\InstalledRepositoryInterface;
+use PLUGIN_NAMESPACE\Deps\Composer\Util\Filesystem;
+use PLUGIN_NAMESPACE\Deps\React\Promise\PromiseInterface;
 /** @internal */
 class Installer extends LibraryInstaller
 {

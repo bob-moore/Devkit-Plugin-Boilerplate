@@ -1,8 +1,8 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
-use Devkit\Plugin\Deps\Timber\Image\Operation;
+use PLUGIN_NAMESPACE\Deps\Timber\Image\Operation;
 /**
  * Class ImageHelper
  *

@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Attribute;
+namespace PLUGIN_NAMESPACE\Deps\DI\Attribute;
 
 use Attribute;
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidAttribute;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidAttribute;
 /**
  * #[Inject] attribute.
  *

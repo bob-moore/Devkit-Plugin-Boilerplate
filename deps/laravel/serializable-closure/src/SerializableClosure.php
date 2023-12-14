@@ -1,12 +1,12 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Laravel\SerializableClosure;
+namespace PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure;
 
 use Closure;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Exceptions\InvalidSignatureException;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Serializers\Signed;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Signers\Hmac;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Exceptions\InvalidSignatureException;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Serializers\Signed;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Signers\Hmac;
 /** @internal */
 class SerializableClosure
 {

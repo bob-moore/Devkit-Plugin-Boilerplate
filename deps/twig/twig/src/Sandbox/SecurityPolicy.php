@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Sandbox;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Sandbox;
 
-use Devkit\Plugin\Deps\Twig\Markup;
-use Devkit\Plugin\Deps\Twig\Template;
+use PLUGIN_NAMESPACE\Deps\Twig\Markup;
+use PLUGIN_NAMESPACE\Deps\Twig\Template;
 /**
  * Represents a security policy which need to be enforced when sandbox mode is enabled.
  *

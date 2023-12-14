@@ -8,18 +8,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Profiler\NodeVisitor;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Profiler\NodeVisitor;
 
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Node\BlockNode;
-use Devkit\Plugin\Deps\Twig\Node\BodyNode;
-use Devkit\Plugin\Deps\Twig\Node\MacroNode;
-use Devkit\Plugin\Deps\Twig\Node\ModuleNode;
-use Devkit\Plugin\Deps\Twig\Node\Node;
-use Devkit\Plugin\Deps\Twig\NodeVisitor\NodeVisitorInterface;
-use Devkit\Plugin\Deps\Twig\Profiler\Node\EnterProfileNode;
-use Devkit\Plugin\Deps\Twig\Profiler\Node\LeaveProfileNode;
-use Devkit\Plugin\Deps\Twig\Profiler\Profile;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\BlockNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\BodyNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\MacroNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\ModuleNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor\NodeVisitorInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Profiler\Node\EnterProfileNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Profiler\Node\LeaveProfileNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Profiler\Profile;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  * @internal

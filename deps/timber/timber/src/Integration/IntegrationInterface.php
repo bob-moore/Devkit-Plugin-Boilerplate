@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Integration;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Integration;
 
 /**
  * Timber\Integration\IntegrationInterface

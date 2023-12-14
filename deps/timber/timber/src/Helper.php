@@ -1,11 +1,11 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 use Exception;
 use InvalidArgumentException;
 use stdClass;
-use Devkit\Plugin\Deps\Timber\Factory\PostFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\PostFactory;
 use WP_List_Util;
 use WP_Post;
 use WP_Term;

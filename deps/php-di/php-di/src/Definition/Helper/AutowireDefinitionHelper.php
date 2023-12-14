@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Helper;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Helper;
 
-use Devkit\Plugin\Deps\DI\Definition\AutowireDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\AutowireDefinition;
 /**
  * Helps defining how to create an instance of a class using autowiring.
  *

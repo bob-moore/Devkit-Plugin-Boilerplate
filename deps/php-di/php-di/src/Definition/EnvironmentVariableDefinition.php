@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition;
 
 /**
  * Defines a reference to an environment variable, with fallback to a default

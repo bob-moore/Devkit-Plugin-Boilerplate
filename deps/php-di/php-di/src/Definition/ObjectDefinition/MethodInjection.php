@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
 
-use Devkit\Plugin\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
 /**
  * Describe an injection in an object method.
  *

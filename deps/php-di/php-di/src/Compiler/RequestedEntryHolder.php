@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Compiler;
+namespace PLUGIN_NAMESPACE\Deps\DI\Compiler;
 
-use Devkit\Plugin\Deps\DI\Factory\RequestedEntry;
+use PLUGIN_NAMESPACE\Deps\DI\Factory\RequestedEntry;
 /**
  * @author Matthieu Napoli <matthieu@mnapoli.fr>
  * @internal

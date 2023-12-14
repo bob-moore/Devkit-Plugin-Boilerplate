@@ -1,17 +1,17 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 use DateInterval;
 use DateTime;
 use DateTimeInterface;
 use Exception;
-use Devkit\Plugin\Deps\Timber\Factory\PostFactory;
-use Devkit\Plugin\Deps\Timber\Factory\TermFactory;
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Extension\CoreExtension;
-use Devkit\Plugin\Deps\Twig\TwigFilter;
-use Devkit\Plugin\Deps\Twig\TwigFunction;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\PostFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\TermFactory;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\CoreExtension;
+use PLUGIN_NAMESPACE\Deps\Twig\TwigFilter;
+use PLUGIN_NAMESPACE\Deps\Twig\TwigFunction;
 /**
  * Class Twig
  * @internal

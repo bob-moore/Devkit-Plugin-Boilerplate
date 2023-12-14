@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\Invoker\ParameterResolver;
+namespace PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver;
 
 use ReflectionException;
 use ReflectionFunctionAbstract;

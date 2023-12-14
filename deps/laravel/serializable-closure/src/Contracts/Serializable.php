@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Laravel\SerializableClosure\Contracts;
+namespace PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Contracts;
 
 /** @internal */
 interface Serializable

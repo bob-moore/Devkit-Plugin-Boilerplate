@@ -1,9 +1,9 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Laravel\SerializableClosure;
+namespace PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure;
 
 use Closure;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
 /** @internal */
 class UnsignedSerializableClosure
 {

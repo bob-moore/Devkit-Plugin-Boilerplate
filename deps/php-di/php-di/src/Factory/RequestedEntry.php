@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Factory;
+namespace PLUGIN_NAMESPACE\Deps\DI\Factory;
 
 /**
  * Represents the container entry that was requested.

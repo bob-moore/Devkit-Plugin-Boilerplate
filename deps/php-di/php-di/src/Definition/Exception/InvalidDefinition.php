@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Exception;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Exception;
 
-use Devkit\Plugin\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
 use Psr\Container\ContainerExceptionInterface;
 /**
  * Invalid DI definitions.

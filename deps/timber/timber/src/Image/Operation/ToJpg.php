@@ -1,9 +1,9 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Image\Operation;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Image\Operation;
 
-use Devkit\Plugin\Deps\Timber\Image\Operation as ImageOperation;
-use Devkit\Plugin\Deps\Timber\ImageHelper;
+use PLUGIN_NAMESPACE\Deps\Timber\Image\Operation as ImageOperation;
+use PLUGIN_NAMESPACE\Deps\Timber\ImageHelper;
 /**
  * Implements converting a PNG file to JPG.
  * Argument:

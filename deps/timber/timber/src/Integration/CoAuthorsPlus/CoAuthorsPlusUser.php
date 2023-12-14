@@ -1,9 +1,9 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Integration\CoAuthorsPlus;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Integration\CoAuthorsPlus;
 
 use stdclass;
-use Devkit\Plugin\Deps\Timber\User;
+use PLUGIN_NAMESPACE\Deps\Timber\User;
 /** @internal */
 class CoAuthorsPlusUser extends User
 {

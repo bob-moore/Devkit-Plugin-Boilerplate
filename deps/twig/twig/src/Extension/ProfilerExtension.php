@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Extension;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Extension;
 
-use Devkit\Plugin\Deps\Twig\Profiler\NodeVisitor\ProfilerNodeVisitor;
-use Devkit\Plugin\Deps\Twig\Profiler\Profile;
+use PLUGIN_NAMESPACE\Deps\Twig\Profiler\NodeVisitor\ProfilerNodeVisitor;
+use PLUGIN_NAMESPACE\Deps\Twig\Profiler\Profile;
 /** @internal */
 class ProfilerExtension extends AbstractExtension
 {

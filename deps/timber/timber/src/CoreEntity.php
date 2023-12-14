@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 /** @internal */
 abstract class CoreEntity extends Core implements CoreInterface, CoreEntityInterface, MetaInterface

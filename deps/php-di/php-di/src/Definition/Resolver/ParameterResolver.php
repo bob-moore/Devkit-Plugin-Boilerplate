@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Resolver;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Resolver;
 
-use Devkit\Plugin\Deps\DI\Definition\Definition;
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\MethodInjection;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\MethodInjection;
 use ReflectionMethod;
 use ReflectionParameter;
 /**

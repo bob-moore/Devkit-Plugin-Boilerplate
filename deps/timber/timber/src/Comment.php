@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 use WP_Comment;
 /**
@@ -63,7 +63,7 @@ class Comment extends CoreEntity
      * @api
      * @var string
      */
-    public $comment_author_email;
+    public $comment_AUTHOR_NAME;
     /**
      * @api
      * @var string
@@ -471,7 +471,7 @@ class Comment extends CoreEntity
         if ($user) {
             $email = $user->user_email;
         } else {
-            $email = $this->comment_author_email;
+            $email = $this->comment_AUTHOR_NAME;
         }
         return $email;
     }

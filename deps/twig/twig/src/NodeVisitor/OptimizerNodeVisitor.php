@@ -8,21 +8,21 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\NodeVisitor;
+namespace PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor;
 
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Node\BlockReferenceNode;
-use Devkit\Plugin\Deps\Twig\Node\Expression\BlockReferenceExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ConstantExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\FilterExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\FunctionExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\GetAttrExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\NameExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ParentExpression;
-use Devkit\Plugin\Deps\Twig\Node\ForNode;
-use Devkit\Plugin\Deps\Twig\Node\IncludeNode;
-use Devkit\Plugin\Deps\Twig\Node\Node;
-use Devkit\Plugin\Deps\Twig\Node\PrintNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\BlockReferenceNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\BlockReferenceExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ConstantExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\FilterExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\FunctionExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\GetAttrExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\NameExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ParentExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\ForNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\IncludeNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\PrintNode;
 /**
  * Tries to optimize the AST.
  *

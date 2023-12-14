@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Exception;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Exception;
 
 /**
  * Error in the definitions using PHP attributes.

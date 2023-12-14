@@ -1,9 +1,9 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Composer\Installers;
+namespace PLUGIN_NAMESPACE\Deps\Composer\Installers;
 
-use Devkit\Plugin\Deps\Composer\DependencyResolver\Pool;
-use Devkit\Plugin\Deps\Composer\Semver\Constraint\Constraint;
+use PLUGIN_NAMESPACE\Deps\Composer\DependencyResolver\Pool;
+use PLUGIN_NAMESPACE\Deps\Composer\Semver\Constraint\Constraint;
 /** @internal */
 class CakePHPInstaller extends BaseInstaller
 {

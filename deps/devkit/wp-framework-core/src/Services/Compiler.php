@@ -6,15 +6,15 @@
  * PHP Version 8.0.28
  *
  * @package WP Plugin Skeleton
- * @author  Bob Moore <bob@bobmoore.dev>
+ * @author  AUTHOR_NAME <AUTHOR_EMAIL>
  * @license GPL-2.0+ <http://www.gnu.org/licenses/gpl-2.0.txt>
  * @link    https://github.com/bob-moore/wp-framework-core
  * @since   1.0.0
  */
-namespace Devkit\Plugin\Deps\Devkit\WPCore\Services;
+namespace PLUGIN_NAMESPACE\Deps\Devkit\WPCore\Services;
 
-use Devkit\Plugin\Deps\Devkit\WPCore\Abstracts, Devkit\Plugin\Deps\Devkit\WPCore\Interfaces, Devkit\Plugin\Deps\Devkit\WPCore\Traits, Devkit\Plugin\Deps\Timber\Timber, Devkit\Plugin\Deps\Timber\Loader, Devkit\Plugin\Deps\Twig\TwigFunction, Devkit\Plugin\Deps\Twig\TwigFilter, Devkit\Plugin\Deps\Twig\Environment, Devkit\Plugin\Deps\Twig\Error\SyntaxError;
-use Devkit\Plugin\Deps\DI\Attribute\Inject;
+use PLUGIN_NAMESPACE\Deps\Devkit\WPCore\Abstracts, PLUGIN_NAMESPACE\Deps\Devkit\WPCore\Interfaces, PLUGIN_NAMESPACE\Deps\Devkit\WPCore\Traits, PLUGIN_NAMESPACE\Deps\Timber\Timber, PLUGIN_NAMESPACE\Deps\Timber\Loader, PLUGIN_NAMESPACE\Deps\Twig\TwigFunction, PLUGIN_NAMESPACE\Deps\Twig\TwigFilter, PLUGIN_NAMESPACE\Deps\Twig\Environment, PLUGIN_NAMESPACE\Deps\Twig\Error\SyntaxError;
+use PLUGIN_NAMESPACE\Deps\DI\Attribute\Inject;
 use LogicException;
 /**
  * Service class to compile twig files and provide timber functions

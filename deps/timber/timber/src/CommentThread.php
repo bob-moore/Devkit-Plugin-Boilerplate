@@ -1,9 +1,9 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 use ArrayObject;
-use Devkit\Plugin\Deps\Timber\Factory\CommentFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\CommentFactory;
 /**
  * Class CommentThread
  *

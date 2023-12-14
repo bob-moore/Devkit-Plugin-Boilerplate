@@ -1,9 +1,9 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 use ReturnTypeWillChange;
-use Devkit\Plugin\Deps\Timber\Factory\PostFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\PostFactory;
 use WP_Post;
 /**
  * Trait implementing ArrayAccess::getOffset() using lazy instantiation.

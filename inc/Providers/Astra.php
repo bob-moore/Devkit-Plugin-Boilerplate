@@ -5,16 +5,16 @@
  * PHP Version 8.0.28
  *
  * @package theme
- * @author  Bob Moore <bob.moore@midwestfamilymadison.com>
+ * @author  AUTHOR_NAME <bob.moore@midwestfamilymadison.com>
  * @license GPL-2.0+ <http://www.gnu.org/licenses/gpl-2.0.txt>
  * @link    https://github.com/MDMDevOps/wp-theme-boilerplate
  * @since   1.0.0
  */
 
-namespace Devkit\Plugin\Providers;
+namespace PLUGIN_NAMESPACE\Providers;
 
-use Devkit\Plugin\Deps\Devkit\WPCore,
-	Devkit\Plugin\Deps\Devkit\WPCore\DI\OnMount;
+use PLUGIN_NAMESPACE\Deps\Devkit\WPCore,
+	PLUGIN_NAMESPACE\Deps\Devkit\WPCore\DI\OnMount;
 
 /**
  * Class for interacting with astra directly

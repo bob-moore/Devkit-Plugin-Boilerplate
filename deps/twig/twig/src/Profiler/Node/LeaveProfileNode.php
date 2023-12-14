@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Profiler\Node;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Profiler\Node;
 
-use Devkit\Plugin\Deps\Twig\Compiler;
-use Devkit\Plugin\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
 /**
  * Represents a profile leave node.
  *

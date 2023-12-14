@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Util;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Util;
 
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Error\SyntaxError;
-use Devkit\Plugin\Deps\Twig\Source;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\SyntaxError;
+use PLUGIN_NAMESPACE\Deps\Twig\Source;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  * @internal

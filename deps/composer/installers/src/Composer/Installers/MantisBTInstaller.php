@@ -1,8 +1,8 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Composer\Installers;
+namespace PLUGIN_NAMESPACE\Deps\Composer\Installers;
 
-use Devkit\Plugin\Deps\Composer\DependencyResolver\Pool;
+use PLUGIN_NAMESPACE\Deps\Composer\DependencyResolver\Pool;
 /** @internal */
 class MantisBTInstaller extends BaseInstaller
 {

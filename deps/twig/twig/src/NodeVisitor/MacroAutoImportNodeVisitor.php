@@ -8,17 +8,17 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\NodeVisitor;
+namespace PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor;
 
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Node\Expression\AssignNameExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ConstantExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\GetAttrExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\MethodCallExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\NameExpression;
-use Devkit\Plugin\Deps\Twig\Node\ImportNode;
-use Devkit\Plugin\Deps\Twig\Node\ModuleNode;
-use Devkit\Plugin\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\AssignNameExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ConstantExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\GetAttrExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\MethodCallExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\NameExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\ImportNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\ModuleNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  *

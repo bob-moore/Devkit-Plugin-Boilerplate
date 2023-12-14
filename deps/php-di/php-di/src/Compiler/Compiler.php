@@ -1,26 +1,26 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Compiler;
+namespace PLUGIN_NAMESPACE\Deps\DI\Compiler;
 
 use function chmod;
-use Devkit\Plugin\Deps\DI\Definition\ArrayDefinition;
-use Devkit\Plugin\Deps\DI\Definition\DecoratorDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Definition;
-use Devkit\Plugin\Deps\DI\Definition\EnvironmentVariableDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidDefinition;
-use Devkit\Plugin\Deps\DI\Definition\FactoryDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Reference;
-use Devkit\Plugin\Deps\DI\Definition\Source\DefinitionSource;
-use Devkit\Plugin\Deps\DI\Definition\StringDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ValueDefinition;
-use Devkit\Plugin\Deps\DI\DependencyException;
-use Devkit\Plugin\Deps\DI\Proxy\ProxyFactory;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ArrayDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\DecoratorDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\EnvironmentVariableDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\FactoryDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Reference;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\DefinitionSource;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\StringDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ValueDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\DependencyException;
+use PLUGIN_NAMESPACE\Deps\DI\Proxy\ProxyFactory;
 use function dirname;
 use function file_put_contents;
 use InvalidArgumentException;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Support\ReflectionClosure;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Support\ReflectionClosure;
 use function rename;
 use function sprintf;
 use function tempnam;

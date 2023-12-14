@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Resolver;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Resolver;
 
-use Devkit\Plugin\Deps\DI\Definition\ArrayDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Definition;
-use Devkit\Plugin\Deps\DI\DependencyException;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ArrayDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\DependencyException;
 use Exception;
 /**
  * Resolves an array definition to a value.

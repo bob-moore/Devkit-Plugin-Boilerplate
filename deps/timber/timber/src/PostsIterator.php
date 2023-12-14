@@ -1,10 +1,10 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 use ArrayIterator;
 use ReturnTypeWillChange;
-use Devkit\Plugin\Deps\Timber\Factory\PostFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\PostFactory;
 /**
  * Class PostsIterator
  * @internal

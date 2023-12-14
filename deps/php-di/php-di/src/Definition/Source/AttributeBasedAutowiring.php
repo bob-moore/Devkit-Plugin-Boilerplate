@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Source;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Source;
 
-use Devkit\Plugin\Deps\DI\Attribute\Inject;
-use Devkit\Plugin\Deps\DI\Attribute\Injectable;
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidAttribute;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\MethodInjection;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\PropertyInjection;
-use Devkit\Plugin\Deps\DI\Definition\Reference;
+use PLUGIN_NAMESPACE\Deps\DI\Attribute\Inject;
+use PLUGIN_NAMESPACE\Deps\DI\Attribute\Injectable;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidAttribute;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\MethodInjection;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\PropertyInjection;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Reference;
 use InvalidArgumentException;
 use ReflectionClass;
 use ReflectionMethod;

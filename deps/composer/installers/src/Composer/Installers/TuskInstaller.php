@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Composer\Installers;
+namespace PLUGIN_NAMESPACE\Deps\Composer\Installers;
 
 /**
  * Composer installer for 3rd party Tusk utilities

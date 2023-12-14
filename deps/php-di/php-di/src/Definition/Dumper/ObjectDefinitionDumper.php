@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Dumper;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Dumper;
 
-use Devkit\Plugin\Deps\DI\Definition\Definition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\MethodInjection;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\MethodInjection;
 use ReflectionException;
 /**
  * Dumps object definitions to string for debugging purposes.

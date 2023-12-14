@@ -1,10 +1,10 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Image\Operation;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Image\Operation;
 
-use Devkit\Plugin\Deps\Timber\Helper;
-use Devkit\Plugin\Deps\Timber\Image\Operation as ImageOperation;
-use Devkit\Plugin\Deps\Timber\ImageHelper;
+use PLUGIN_NAMESPACE\Deps\Timber\Helper;
+use PLUGIN_NAMESPACE\Deps\Timber\Image\Operation as ImageOperation;
+use PLUGIN_NAMESPACE\Deps\Timber\ImageHelper;
 /**
  * This class is used to process webp images. Not all server configurations support webp.
  * If webp is not enabled, Timber will generate webp images instead

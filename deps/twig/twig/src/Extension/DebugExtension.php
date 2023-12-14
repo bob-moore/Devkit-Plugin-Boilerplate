@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Extension;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Extension;
 
-use Devkit\Plugin\Deps\Twig\TwigFunction;
+use PLUGIN_NAMESPACE\Deps\Twig\TwigFunction;
 /** @internal */
 final class DebugExtension extends AbstractExtension
 {
@@ -21,11 +21,11 @@ final class DebugExtension extends AbstractExtension
         return [new TwigFunction('dump', 'twig_var_dump', ['is_safe' => $isDumpOutputHtmlSafe ? ['html'] : [], 'needs_context' => \true, 'needs_environment' => \true, 'is_variadic' => \true])];
     }
 }
-namespace Devkit\Plugin\Deps;
+namespace PLUGIN_NAMESPACE\Deps;
 
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Template;
-use Devkit\Plugin\Deps\Twig\TemplateWrapper;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Template;
+use PLUGIN_NAMESPACE\Deps\Twig\TemplateWrapper;
 /** @internal */
 function twig_var_dump(Environment $env, $context, ...$vars)
 {

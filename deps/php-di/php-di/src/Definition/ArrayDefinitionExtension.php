@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition;
 
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidDefinition;
 /**
  * Extends an array definition by adding new elements into it.
  *

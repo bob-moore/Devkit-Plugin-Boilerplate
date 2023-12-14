@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Invoker;
+namespace PLUGIN_NAMESPACE\Deps\DI\Invoker;
 
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\ParameterResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\ParameterResolver;
 use Psr\Container\ContainerInterface;
 use ReflectionFunctionAbstract;
 use ReflectionNamedType;

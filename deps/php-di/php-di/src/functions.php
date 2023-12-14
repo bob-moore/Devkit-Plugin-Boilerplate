@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI;
+namespace PLUGIN_NAMESPACE\Deps\DI;
 
-use Devkit\Plugin\Deps\DI\Definition\ArrayDefinitionExtension;
-use Devkit\Plugin\Deps\DI\Definition\EnvironmentVariableDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Helper\AutowireDefinitionHelper;
-use Devkit\Plugin\Deps\DI\Definition\Helper\CreateDefinitionHelper;
-use Devkit\Plugin\Deps\DI\Definition\Helper\FactoryDefinitionHelper;
-use Devkit\Plugin\Deps\DI\Definition\Reference;
-use Devkit\Plugin\Deps\DI\Definition\StringDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ValueDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ArrayDefinitionExtension;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\EnvironmentVariableDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Helper\AutowireDefinitionHelper;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Helper\CreateDefinitionHelper;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Helper\FactoryDefinitionHelper;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Reference;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\StringDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ValueDefinition;
 if (!\function_exists('Devkit\\Plugin\\Deps\\DI\\value')) {
     /**
      * Helper for defining a value.

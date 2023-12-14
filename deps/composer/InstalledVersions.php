@@ -9,10 +9,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Composer;
+namespace PLUGIN_NAMESPACE\Deps\Composer;
 
-use Devkit\Plugin\Deps\Composer\Autoload\ClassLoader;
-use Devkit\Plugin\Deps\Composer\Semver\VersionParser;
+use PLUGIN_NAMESPACE\Deps\Composer\Autoload\ClassLoader;
+use PLUGIN_NAMESPACE\Deps\Composer\Semver\VersionParser;
 /**
  * This class is copied in every Composer installed project and available to all
  *

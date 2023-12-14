@@ -1,16 +1,16 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Laravel\SerializableClosure\Serializers;
+namespace PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Serializers;
 
 use Closure;
 use DateTimeInterface;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Contracts\Serializable;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\SerializableClosure;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Support\ClosureScope;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Support\ClosureStream;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Support\ReflectionClosure;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Support\SelfReference;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\UnsignedSerializableClosure;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Contracts\Serializable;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\SerializableClosure;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Support\ClosureScope;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Support\ClosureStream;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Support\ReflectionClosure;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Support\SelfReference;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\UnsignedSerializableClosure;
 use ReflectionObject;
 use UnitEnum;
 /** @internal */

@@ -9,9 +9,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Node\Expression\Binary;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Binary;
 
-use Devkit\Plugin\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
 /** @internal */
 class ConcatBinary extends AbstractBinary
 {

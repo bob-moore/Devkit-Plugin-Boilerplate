@@ -9,28 +9,28 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig;
+namespace PLUGIN_NAMESPACE\Deps\Twig;
 
-use Devkit\Plugin\Deps\Twig\Error\SyntaxError;
-use Devkit\Plugin\Deps\Twig\Node\Expression\AbstractExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ArrayExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ArrowFunctionExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\AssignNameExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Binary\AbstractBinary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Binary\ConcatBinary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\BlockReferenceExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ConditionalExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ConstantExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\GetAttrExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\MethodCallExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\NameExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ParentExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\TestExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Unary\AbstractUnary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Unary\NegUnary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Unary\NotUnary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Unary\PosUnary;
-use Devkit\Plugin\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\SyntaxError;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\AbstractExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ArrayExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ArrowFunctionExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\AssignNameExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Binary\AbstractBinary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Binary\ConcatBinary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\BlockReferenceExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ConditionalExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ConstantExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\GetAttrExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\MethodCallExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\NameExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ParentExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\TestExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Unary\AbstractUnary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Unary\NegUnary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Unary\NotUnary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Unary\PosUnary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
 /**
  * Parses expressions.
  *

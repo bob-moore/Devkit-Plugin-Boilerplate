@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Extension;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Extension;
 
-use Devkit\Plugin\Deps\Twig\NodeVisitor\NodeVisitorInterface;
-use Devkit\Plugin\Deps\Twig\TokenParser\TokenParserInterface;
-use Devkit\Plugin\Deps\Twig\TwigFilter;
-use Devkit\Plugin\Deps\Twig\TwigFunction;
-use Devkit\Plugin\Deps\Twig\TwigTest;
+use PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor\NodeVisitorInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\TokenParser\TokenParserInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\TwigFilter;
+use PLUGIN_NAMESPACE\Deps\Twig\TwigFunction;
+use PLUGIN_NAMESPACE\Deps\Twig\TwigTest;
 /**
  * Used by \Twig\Environment as a staging area.
  *

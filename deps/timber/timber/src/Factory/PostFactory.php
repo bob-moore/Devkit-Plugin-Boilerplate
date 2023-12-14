@@ -1,16 +1,16 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Factory;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Factory;
 
 use InvalidArgumentException;
-use Devkit\Plugin\Deps\Timber\Attachment;
-use Devkit\Plugin\Deps\Timber\CoreInterface;
-use Devkit\Plugin\Deps\Timber\Helper;
-use Devkit\Plugin\Deps\Timber\Image;
-use Devkit\Plugin\Deps\Timber\PathHelper;
-use Devkit\Plugin\Deps\Timber\Post;
-use Devkit\Plugin\Deps\Timber\PostArrayObject;
-use Devkit\Plugin\Deps\Timber\PostQuery;
+use PLUGIN_NAMESPACE\Deps\Timber\Attachment;
+use PLUGIN_NAMESPACE\Deps\Timber\CoreInterface;
+use PLUGIN_NAMESPACE\Deps\Timber\Helper;
+use PLUGIN_NAMESPACE\Deps\Timber\Image;
+use PLUGIN_NAMESPACE\Deps\Timber\PathHelper;
+use PLUGIN_NAMESPACE\Deps\Timber\Post;
+use PLUGIN_NAMESPACE\Deps\Timber\PostArrayObject;
+use PLUGIN_NAMESPACE\Deps\Timber\PostQuery;
 use WP_Post;
 use WP_Query;
 /**

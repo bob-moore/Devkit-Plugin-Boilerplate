@@ -1,10 +1,10 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Composer\Installers;
+namespace PLUGIN_NAMESPACE\Deps\Composer\Installers;
 
-use Devkit\Plugin\Deps\Composer\Composer;
-use Devkit\Plugin\Deps\Composer\IO\IOInterface;
-use Devkit\Plugin\Deps\Composer\Plugin\PluginInterface;
+use PLUGIN_NAMESPACE\Deps\Composer\Composer;
+use PLUGIN_NAMESPACE\Deps\Composer\IO\IOInterface;
+use PLUGIN_NAMESPACE\Deps\Composer\Plugin\PluginInterface;
 /** @internal */
 class Plugin implements PluginInterface
 {

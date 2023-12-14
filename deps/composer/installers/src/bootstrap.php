@@ -1,8 +1,8 @@
 <?php
 
-namespace Devkit\Plugin\Deps;
+namespace PLUGIN_NAMESPACE\Deps;
 
-use Devkit\Plugin\Deps\Composer\Autoload\ClassLoader;
+use PLUGIN_NAMESPACE\Deps\Composer\Autoload\ClassLoader;
 /** @internal */
 function includeIfExists(string $file) : ?ClassLoader
 {

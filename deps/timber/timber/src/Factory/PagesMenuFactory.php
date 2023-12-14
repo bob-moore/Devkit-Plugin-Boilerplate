@@ -1,9 +1,9 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Factory;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Factory;
 
-use Devkit\Plugin\Deps\Timber\CoreInterface;
-use Devkit\Plugin\Deps\Timber\PagesMenu;
+use PLUGIN_NAMESPACE\Deps\Timber\CoreInterface;
+use PLUGIN_NAMESPACE\Deps\Timber\PagesMenu;
 /**
  * Internal API class for instantiating Menus
  * @internal

@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Node\Expression;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Node\Expression;
 
-use Devkit\Plugin\Deps\Twig\Compiler;
-use Devkit\Plugin\Deps\Twig\Error\SyntaxError;
-use Devkit\Plugin\Deps\Twig\Extension\ExtensionInterface;
-use Devkit\Plugin\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\SyntaxError;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\ExtensionInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
 /** @internal */
 abstract class CallExpression extends AbstractExpression
 {

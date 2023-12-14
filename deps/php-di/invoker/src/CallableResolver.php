@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\Invoker;
+namespace PLUGIN_NAMESPACE\Deps\Invoker;
 
 use Closure;
-use Devkit\Plugin\Deps\Invoker\Exception\NotCallableException;
+use PLUGIN_NAMESPACE\Deps\Invoker\Exception\NotCallableException;
 use Psr\Container\ContainerInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use ReflectionException;

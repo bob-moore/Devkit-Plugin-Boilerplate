@@ -9,7 +9,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Error;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Error;
 
 /**
  * \Exception thrown when a syntax error occurs during lexing or parsing of a template.

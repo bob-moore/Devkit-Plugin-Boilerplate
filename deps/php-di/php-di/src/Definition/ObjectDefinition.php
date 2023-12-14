@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition;
 
-use Devkit\Plugin\Deps\DI\Definition\Dumper\ObjectDefinitionDumper;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\MethodInjection;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\PropertyInjection;
-use Devkit\Plugin\Deps\DI\Definition\Source\DefinitionArray;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Dumper\ObjectDefinitionDumper;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\MethodInjection;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\PropertyInjection;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\DefinitionArray;
 use ReflectionClass;
 /**
  * Defines how an object can be instantiated.

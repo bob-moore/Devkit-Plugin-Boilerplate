@@ -1,10 +1,10 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Laravel\SerializableClosure\Serializers;
+namespace PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Serializers;
 
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Contracts\Serializable;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Exceptions\InvalidSignatureException;
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Exceptions\MissingSecretKeyException;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Contracts\Serializable;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Exceptions\InvalidSignatureException;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Exceptions\MissingSecretKeyException;
 /** @internal */
 class Signed implements Serializable
 {

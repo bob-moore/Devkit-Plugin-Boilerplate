@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Extension;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Extension;
 
-use Devkit\Plugin\Deps\Twig\TwigFunction;
+use PLUGIN_NAMESPACE\Deps\Twig\TwigFunction;
 /** @internal */
 final class StringLoaderExtension extends AbstractExtension
 {
@@ -19,10 +19,10 @@ final class StringLoaderExtension extends AbstractExtension
         return [new TwigFunction('template_from_string', 'twig_template_from_string', ['needs_environment' => \true])];
     }
 }
-namespace Devkit\Plugin\Deps;
+namespace PLUGIN_NAMESPACE\Deps;
 
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\TemplateWrapper;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\TemplateWrapper;
 /**
  * Loads a template from a string.
  *

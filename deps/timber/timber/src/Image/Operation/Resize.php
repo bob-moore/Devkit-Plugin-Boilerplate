@@ -1,11 +1,11 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Image\Operation;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Image\Operation;
 
 use Imagick;
-use Devkit\Plugin\Deps\Timber\Helper;
-use Devkit\Plugin\Deps\Timber\Image\Operation as ImageOperation;
-use Devkit\Plugin\Deps\Timber\ImageHelper;
+use PLUGIN_NAMESPACE\Deps\Timber\Helper;
+use PLUGIN_NAMESPACE\Deps\Timber\Image\Operation as ImageOperation;
+use PLUGIN_NAMESPACE\Deps\Timber\ImageHelper;
 use WP_Image_Editor;
 /**
  * Changes image to new size, by shrinking/enlarging

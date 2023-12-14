@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Laravel\SerializableClosure\Exceptions;
+namespace PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Exceptions;
 
 use Exception;
 /** @internal */

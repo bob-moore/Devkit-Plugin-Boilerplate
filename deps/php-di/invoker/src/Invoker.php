@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\Invoker;
+namespace PLUGIN_NAMESPACE\Deps\Invoker;
 
-use Devkit\Plugin\Deps\Invoker\Exception\NotCallableException;
-use Devkit\Plugin\Deps\Invoker\Exception\NotEnoughParametersException;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\AssociativeArrayResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\DefaultValueResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\NumericArrayResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\ParameterResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\ResolverChain;
-use Devkit\Plugin\Deps\Invoker\Reflection\CallableReflection;
+use PLUGIN_NAMESPACE\Deps\Invoker\Exception\NotCallableException;
+use PLUGIN_NAMESPACE\Deps\Invoker\Exception\NotEnoughParametersException;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\AssociativeArrayResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\DefaultValueResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\NumericArrayResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\ParameterResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\ResolverChain;
+use PLUGIN_NAMESPACE\Deps\Invoker\Reflection\CallableReflection;
 use Psr\Container\ContainerInterface;
 use ReflectionParameter;
 /**

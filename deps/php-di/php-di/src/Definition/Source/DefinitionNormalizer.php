@@ -1,17 +1,17 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Source;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Source;
 
-use Devkit\Plugin\Deps\DI\Definition\ArrayDefinition;
-use Devkit\Plugin\Deps\DI\Definition\AutowireDefinition;
-use Devkit\Plugin\Deps\DI\Definition\DecoratorDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Definition;
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidDefinition;
-use Devkit\Plugin\Deps\DI\Definition\FactoryDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Helper\DefinitionHelper;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ValueDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ArrayDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\AutowireDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\DecoratorDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\FactoryDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Helper\DefinitionHelper;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ValueDefinition;
 /**
  * Turns raw definitions/definition helpers into definitions ready
  * to be resolved or compiled.

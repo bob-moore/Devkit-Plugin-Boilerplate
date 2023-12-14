@@ -1,8 +1,8 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Integration\CLI;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Integration\CLI;
 
-use Devkit\Plugin\Deps\Timber\Cache\Cleaner;
+use PLUGIN_NAMESPACE\Deps\Timber\Cache\Cleaner;
 use WP_CLI;
 use WP_CLI_Command;
 if (!\class_exists('Devkit\\Plugin\\Deps\\WP_CLI_Command')) {

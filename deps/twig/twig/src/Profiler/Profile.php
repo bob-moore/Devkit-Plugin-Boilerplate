@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Profiler;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Profiler;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

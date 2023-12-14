@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Helper;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Helper;
 
-use Devkit\Plugin\Deps\DI\Definition\DecoratorDefinition;
-use Devkit\Plugin\Deps\DI\Definition\FactoryDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\DecoratorDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\FactoryDefinition;
 /**
  * Helps defining how to create an instance of a class using a factory (callable).
  *

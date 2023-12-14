@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Helper;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Helper;
 
-use Devkit\Plugin\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
 /**
  * Helps defining container entries.
  *

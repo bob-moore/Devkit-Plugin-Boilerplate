@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Source;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Source;
 
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\MethodInjection;
-use Devkit\Plugin\Deps\DI\Definition\Reference;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\MethodInjection;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Reference;
 use ReflectionNamedType;
 /**
  * Reads DI class definitions using reflection.

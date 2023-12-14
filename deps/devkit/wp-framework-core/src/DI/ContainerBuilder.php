@@ -6,14 +6,14 @@
  * PHP Version 8.0.28
  *
  * @package WP Plugin Skeleton
- * @author  Bob Moore <bob@bobmoore.dev>
+ * @author  AUTHOR_NAME <AUTHOR_EMAIL>
  * @license GPL-2.0+ <http://www.gnu.org/licenses/gpl-2.0.txt>
  * @link    https://github.com/bob-moore/wp-framework-core
  * @since   1.0.0
  */
-namespace Devkit\Plugin\Deps\Devkit\WPCore\DI;
+namespace PLUGIN_NAMESPACE\Deps\Devkit\WPCore\DI;
 
-use Devkit\Plugin\Deps\Devkit\WPCore\Helpers, Devkit\Plugin\Deps\Devkit\WPCore\Interfaces, Devkit\Plugin\Deps\Devkit\WPCore\Deps, Devkit\Plugin\Deps\DI\Definition\Source\DefinitionSource, Devkit\Plugin\Deps\DI\Definition\Reference, Devkit\Plugin\Deps\DI\Definition\Helper;
+use PLUGIN_NAMESPACE\Deps\Devkit\WPCore\Helpers, PLUGIN_NAMESPACE\Deps\Devkit\WPCore\Interfaces, PLUGIN_NAMESPACE\Deps\Devkit\WPCore\Deps, PLUGIN_NAMESPACE\Deps\DI\Definition\Source\DefinitionSource, PLUGIN_NAMESPACE\Deps\DI\Definition\Reference, PLUGIN_NAMESPACE\Deps\DI\Definition\Helper;
 use Psr\Container\ContainerInterface;
 /**
  * Builder for Service Containers
@@ -21,7 +21,7 @@ use Psr\Container\ContainerInterface;
  * @subpackage DI
  * @internal
  */
-class ContainerBuilder extends \Devkit\Plugin\Deps\DI\ContainerBuilder
+class ContainerBuilder extends \PLUGIN_NAMESPACE\Deps\DI\ContainerBuilder
 {
     /**
      * Saved containers for later retrieval
@@ -117,7 +117,7 @@ class ContainerBuilder extends \Devkit\Plugin\Deps\DI\ContainerBuilder
      */
     public static function autowire(string $class_name = null) : Helper\DefinitionHelper
     {
-        return \Devkit\Plugin\Deps\DI\autowire($class_name);
+        return \PLUGIN_NAMESPACE\Deps\DI\autowire($class_name);
     }
     /**
      * Helper for defining an object.
@@ -127,7 +127,7 @@ class ContainerBuilder extends \Devkit\Plugin\Deps\DI\ContainerBuilder
      */
     public static function create(string $class_name = null) : Helper\DefinitionHelper
     {
-        return \Devkit\Plugin\Deps\DI\create($class_name);
+        return \PLUGIN_NAMESPACE\Deps\DI\create($class_name);
     }
     /**
      * Wrapper for parent get function. Only used for simplicity
@@ -138,7 +138,7 @@ class ContainerBuilder extends \Devkit\Plugin\Deps\DI\ContainerBuilder
      */
     public static function get(string $class_name) : Reference
     {
-        return \Devkit\Plugin\Deps\DI\get($class_name);
+        return \PLUGIN_NAMESPACE\Deps\DI\get($class_name);
     }
     /**
      * Helper for defining a container entry using a factory function/callable.
@@ -148,7 +148,7 @@ class ContainerBuilder extends \Devkit\Plugin\Deps\DI\ContainerBuilder
      */
     public static function factory(callable|array|string $factory) : Helper\DefinitionHelper
     {
-        return \Devkit\Plugin\Deps\DI\factory($factory);
+        return \PLUGIN_NAMESPACE\Deps\DI\factory($factory);
     }
     /**
      * Decorate the previous definition using a callable.
@@ -164,6 +164,6 @@ class ContainerBuilder extends \Devkit\Plugin\Deps\DI\ContainerBuilder
      */
     public static function decorate(callable|array|string $decorator) : Helper\DefinitionHelper
     {
-        return \Devkit\Plugin\Deps\DI\decorate($decorator);
+        return \PLUGIN_NAMESPACE\Deps\DI\decorate($decorator);
     }
 }

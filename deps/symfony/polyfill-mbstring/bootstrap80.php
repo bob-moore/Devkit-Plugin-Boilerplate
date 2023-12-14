@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps;
+namespace PLUGIN_NAMESPACE\Deps;
 
 /*
  * This file is part of the Symfony package.
@@ -10,7 +10,7 @@ namespace Devkit\Plugin\Deps;
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-use Devkit\Plugin\Deps\Symfony\Polyfill\Mbstring as p;
+use PLUGIN_NAMESPACE\Deps\Symfony\Polyfill\Mbstring as p;
 if (!\function_exists('mb_convert_encoding')) {
     /** @internal */
     function mb_convert_encoding(array|string|null $string, ?string $to_encoding, array|string|null $from_encoding = null) : array|string|false

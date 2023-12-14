@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\Invoker;
+namespace PLUGIN_NAMESPACE\Deps\Invoker;
 
-use Devkit\Plugin\Deps\Invoker\Exception\InvocationException;
-use Devkit\Plugin\Deps\Invoker\Exception\NotCallableException;
-use Devkit\Plugin\Deps\Invoker\Exception\NotEnoughParametersException;
+use PLUGIN_NAMESPACE\Deps\Invoker\Exception\InvocationException;
+use PLUGIN_NAMESPACE\Deps\Invoker\Exception\NotCallableException;
+use PLUGIN_NAMESPACE\Deps\Invoker\Exception\NotEnoughParametersException;
 /**
  * Invoke a callable.
  * @internal

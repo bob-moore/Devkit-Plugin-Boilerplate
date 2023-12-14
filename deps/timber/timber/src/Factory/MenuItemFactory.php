@@ -1,10 +1,10 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Factory;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Factory;
 
-use Devkit\Plugin\Deps\Timber\CoreInterface;
-use Devkit\Plugin\Deps\Timber\Menu;
-use Devkit\Plugin\Deps\Timber\MenuItem;
+use PLUGIN_NAMESPACE\Deps\Timber\CoreInterface;
+use PLUGIN_NAMESPACE\Deps\Timber\Menu;
+use PLUGIN_NAMESPACE\Deps\Timber\MenuItem;
 use WP_Post;
 /**
  * Internal API class for instantiating Menus

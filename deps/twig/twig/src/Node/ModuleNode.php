@@ -9,12 +9,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Node;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Node;
 
-use Devkit\Plugin\Deps\Twig\Compiler;
-use Devkit\Plugin\Deps\Twig\Node\Expression\AbstractExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ConstantExpression;
-use Devkit\Plugin\Deps\Twig\Source;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\AbstractExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ConstantExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Source;
 /**
  * Represents a module node.
  *
@@ -84,7 +84,7 @@ final class ModuleNode extends Node
     {
         $compiler->write("\n\nnamespace Devkit\\Plugin\\Deps;\n\n");
         if (!$this->getAttribute('index')) {
-            $compiler->write("use Devkit\Plugin\Deps\\Twig\\Environment;\n")->write("use Devkit\Plugin\Deps\\Twig\\Error\\LoaderError;\n")->write("use Devkit\Plugin\Deps\\Twig\\Error\\RuntimeError;\n")->write("use Devkit\Plugin\Deps\\Twig\\Extension\\SandboxExtension;\n")->write("use Devkit\Plugin\Deps\\Twig\\Markup;\n")->write("use Devkit\Plugin\Deps\\Twig\\Sandbox\\SecurityError;\n")->write("use Devkit\Plugin\Deps\\Twig\\Sandbox\\SecurityNotAllowedTagError;\n")->write("use Devkit\Plugin\Deps\\Twig\\Sandbox\\SecurityNotAllowedFilterError;\n")->write("use Devkit\Plugin\Deps\\Twig\\Sandbox\\SecurityNotAllowedFunctionError;\n")->write("use Devkit\Plugin\Deps\\Twig\\Source;\n")->write("use Devkit\Plugin\Deps\\Twig\\Template;\n\n use function Devkit\Plugin\Deps\\twig_escape_filter; \n\n");
+            $compiler->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Environment;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Error\\LoaderError;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Error\\RuntimeError;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Extension\\SandboxExtension;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Markup;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Sandbox\\SecurityError;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Sandbox\\SecurityNotAllowedTagError;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Sandbox\\SecurityNotAllowedFilterError;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Sandbox\\SecurityNotAllowedFunctionError;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Source;\n")->write("use PLUGIN_NAMESPACE\Deps\\Twig\\Template;\n\n use function PLUGIN_NAMESPACE\Deps\\twig_escape_filter; \n\n");
         }
         $compiler->write('/* ' . \str_replace('*/', '* /', $this->getSourceContext()->getName()) . " */\n")->write('class ' .  \substr( $compiler->getEnvironment()->getTemplateClass($this->getSourceContext()->getName(), $this->getAttribute('index')), 20 ) )->raw(" extends Template\n")->write("{\n")->indent()->write("private \$source;\n")->write("private \$macros = [];\n\n");
     }

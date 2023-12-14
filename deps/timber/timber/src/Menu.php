@@ -1,9 +1,9 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 use Throwable;
-use Devkit\Plugin\Deps\Timber\Factory\MenuItemFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\MenuItemFactory;
 use WP_Term;
 /**
  * Class Menu

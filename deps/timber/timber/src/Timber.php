@@ -1,14 +1,14 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
-use Devkit\Plugin\Deps\Timber\Factory\CommentFactory;
-use Devkit\Plugin\Deps\Timber\Factory\MenuFactory;
-use Devkit\Plugin\Deps\Timber\Factory\PagesMenuFactory;
-use Devkit\Plugin\Deps\Timber\Factory\PostFactory;
-use Devkit\Plugin\Deps\Timber\Factory\TermFactory;
-use Devkit\Plugin\Deps\Timber\Factory\UserFactory;
-use Devkit\Plugin\Deps\Timber\Integration\IntegrationInterface;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\CommentFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\MenuFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\PagesMenuFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\PostFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\TermFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\UserFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Integration\IntegrationInterface;
 use WP_Comment;
 use WP_Comment_Query;
 use WP_Post;

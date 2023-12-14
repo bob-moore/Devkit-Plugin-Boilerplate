@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps;
+namespace PLUGIN_NAMESPACE\Deps;
 
 /*
  * This file is part of the Symfony package.
@@ -10,7 +10,7 @@ namespace Devkit\Plugin\Deps;
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-use Devkit\Plugin\Deps\Symfony\Polyfill\Mbstring as p;
+use PLUGIN_NAMESPACE\Deps\Symfony\Polyfill\Mbstring as p;
 if (\PHP_VERSION_ID >= 80000) {
     return require __DIR__ . '/bootstrap80.php';
 }

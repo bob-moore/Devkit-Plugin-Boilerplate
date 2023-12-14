@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Extension;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Extension;
 
-use Devkit\Plugin\Deps\Twig\NodeVisitor\SandboxNodeVisitor;
-use Devkit\Plugin\Deps\Twig\Sandbox\SecurityNotAllowedMethodError;
-use Devkit\Plugin\Deps\Twig\Sandbox\SecurityNotAllowedPropertyError;
-use Devkit\Plugin\Deps\Twig\Sandbox\SecurityPolicyInterface;
-use Devkit\Plugin\Deps\Twig\Source;
-use Devkit\Plugin\Deps\Twig\TokenParser\SandboxTokenParser;
+use PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor\SandboxNodeVisitor;
+use PLUGIN_NAMESPACE\Deps\Twig\Sandbox\SecurityNotAllowedMethodError;
+use PLUGIN_NAMESPACE\Deps\Twig\Sandbox\SecurityNotAllowedPropertyError;
+use PLUGIN_NAMESPACE\Deps\Twig\Sandbox\SecurityPolicyInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Source;
+use PLUGIN_NAMESPACE\Deps\Twig\TokenParser\SandboxTokenParser;
 /** @internal */
 final class SandboxExtension extends AbstractExtension
 {

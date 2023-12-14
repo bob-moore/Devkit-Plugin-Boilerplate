@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Node\Expression;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Node\Expression;
 
-use Devkit\Plugin\Deps\Twig\Compiler;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Binary\AndBinary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Test\DefinedTest;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Test\NullTest;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Unary\NotUnary;
-use Devkit\Plugin\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Binary\AndBinary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Test\DefinedTest;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Test\NullTest;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Unary\NotUnary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
 /** @internal */
 class NullCoalesceExpression extends ConditionalExpression
 {

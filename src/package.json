@@ -2,7 +2,7 @@
 	"name": "devkit_plugin",
 	"version": "4.0.1",
 	"description": "custom plugin",
-	"author": "Bob Moore <bob.moore@midwestfamilymadison.com>",
+	"author": "AUTHOR_NAME <bob.moore@midwestfamilymadison.com>",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"mu-plugin",

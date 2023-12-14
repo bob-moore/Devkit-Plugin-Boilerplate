@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Node\Expression\Test;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Test;
 
-use Devkit\Plugin\Deps\Twig\Compiler;
-use Devkit\Plugin\Deps\Twig\Node\Expression\TestExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\TestExpression;
 /**
  * Checks if a variable is the exact same value as a constant.
  *

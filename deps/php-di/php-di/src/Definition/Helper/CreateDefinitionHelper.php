@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Helper;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Helper;
 
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\MethodInjection;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition\PropertyInjection;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\MethodInjection;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition\PropertyInjection;
 /**
  * Helps defining how to create an instance of a class.
  *

@@ -9,11 +9,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Node\Expression;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Node\Expression;
 
-use Devkit\Plugin\Deps\Twig\Compiler;
-use Devkit\Plugin\Deps\Twig\Extension\SandboxExtension;
-use Devkit\Plugin\Deps\Twig\Template;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\SandboxExtension;
+use PLUGIN_NAMESPACE\Deps\Twig\Template;
 /** @internal */
 class GetAttrExpression extends AbstractExpression
 {

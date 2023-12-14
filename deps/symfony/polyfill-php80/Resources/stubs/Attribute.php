@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps;
+namespace PLUGIN_NAMESPACE\Deps;
 
 /*
  * This file is part of the Symfony package.

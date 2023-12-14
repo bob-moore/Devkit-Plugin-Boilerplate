@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Image;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Image;
 
 /**
  * Each image filter is represented by a subclass of this class,m

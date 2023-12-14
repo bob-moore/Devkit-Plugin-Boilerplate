@@ -5,11 +5,11 @@
  *
  * @package Timber
  */
-namespace Devkit\Plugin\Deps\Timber\Integration;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Integration;
 
-use Devkit\Plugin\Deps\ACF;
+use PLUGIN_NAMESPACE\Deps\ACF;
 use DateTimeImmutable;
-use Devkit\Plugin\Deps\Timber\Timber;
+use PLUGIN_NAMESPACE\Deps\Timber\Timber;
 /**
  * Class used to handle integration with Advanced Custom Fields
  * @internal
@@ -49,7 +49,7 @@ class AcfIntegration implements IntegrationInterface
     }
     public static function post_meta_object($value, $post_id, $field_name)
     {
-        return \Devkit\Plugin\Deps\get_field_object($field_name, $post_id);
+        return \PLUGIN_NAMESPACE\Deps\get_field_object($field_name, $post_id);
     }
     /**
      * Gets meta value for a term through ACF’s API.
@@ -73,7 +73,7 @@ class AcfIntegration implements IntegrationInterface
     public static function term_set_meta($value, $field, $term_id, $term)
     {
         $searcher = $term->taxonomy . '_' . $term->ID;
-        \Devkit\Plugin\Deps\update_field($field, $value, $searcher);
+        \PLUGIN_NAMESPACE\Deps\update_field($field, $value, $searcher);
         return $value;
     }
     /**
@@ -144,7 +144,7 @@ class AcfIntegration implements IntegrationInterface
         if (!$value) {
             return $value;
         }
-        return new DateTimeImmutable(\Devkit\Plugin\Deps\acf_format_date($value, 'Y-m-d H:i:s'));
+        return new DateTimeImmutable(\PLUGIN_NAMESPACE\Deps\acf_format_date($value, 'Y-m-d H:i:s'));
     }
     /**
      * Transform ACF post object field
@@ -218,7 +218,7 @@ class AcfIntegration implements IntegrationInterface
     {
         $args = \wp_parse_args($args, ['format_value' => \true, 'transform_value' => \false]);
         if (!$args['transform_value']) {
-            return \Devkit\Plugin\Deps\get_field($field_name, $id, $args['format_value']);
+            return \PLUGIN_NAMESPACE\Deps\get_field($field_name, $id, $args['format_value']);
         }
         /**
          * We use acf()->fields->get_field_type() instead of acf_get_field_type(), because of some function stub issues
@@ -227,15 +227,15 @@ class AcfIntegration implements IntegrationInterface
          *
          * @ticket https://github.com/timber/timber/pull/2630
          */
-        $file_field_type = \Devkit\Plugin\Deps\acf_get_field_type('file');
-        $image_field_type = \Devkit\Plugin\Deps\acf_get_field_type('image');
-        $gallery_field_type = \Devkit\Plugin\Deps\acf_get_field_type('gallery');
-        $date_picker_field_type = \Devkit\Plugin\Deps\acf_get_field_type('date_picker');
-        $date_time_picker_field_type = \Devkit\Plugin\Deps\acf_get_field_type('date_time_picker');
-        $post_object_field_type = \Devkit\Plugin\Deps\acf_get_field_type('post_object');
-        $relationship_field_type = \Devkit\Plugin\Deps\acf_get_field_type('relationship');
-        $taxonomy_field_type = \Devkit\Plugin\Deps\acf_get_field_type('taxonomy');
-        $user_field_type = \Devkit\Plugin\Deps\acf_get_field_type('user');
+        $file_field_type = \PLUGIN_NAMESPACE\Deps\acf_get_field_type('file');
+        $image_field_type = \PLUGIN_NAMESPACE\Deps\acf_get_field_type('image');
+        $gallery_field_type = \PLUGIN_NAMESPACE\Deps\acf_get_field_type('gallery');
+        $date_picker_field_type = \PLUGIN_NAMESPACE\Deps\acf_get_field_type('date_picker');
+        $date_time_picker_field_type = \PLUGIN_NAMESPACE\Deps\acf_get_field_type('date_time_picker');
+        $post_object_field_type = \PLUGIN_NAMESPACE\Deps\acf_get_field_type('post_object');
+        $relationship_field_type = \PLUGIN_NAMESPACE\Deps\acf_get_field_type('relationship');
+        $taxonomy_field_type = \PLUGIN_NAMESPACE\Deps\acf_get_field_type('taxonomy');
+        $user_field_type = \PLUGIN_NAMESPACE\Deps\acf_get_field_type('user');
         \remove_filter('acf/format_value/type=file', [$file_field_type, 'format_value']);
         \remove_filter('acf/format_value/type=image', [$image_field_type, 'format_value']);
         \remove_filter('acf/format_value/type=gallery', [$gallery_field_type, 'format_value']);
@@ -254,7 +254,7 @@ class AcfIntegration implements IntegrationInterface
         \add_filter('acf/format_value/type=relationship', [__CLASS__, 'transform_relationship'], 10, 3);
         \add_filter('acf/format_value/type=taxonomy', [__CLASS__, 'transform_taxonomy'], 10, 3);
         \add_filter('acf/format_value/type=user', [__CLASS__, 'transform_user'], 10, 3);
-        $value = \Devkit\Plugin\Deps\get_field($field_name, $id, \true);
+        $value = \PLUGIN_NAMESPACE\Deps\get_field($field_name, $id, \true);
         \add_filter('acf/format_value/type=file', [$file_field_type, 'format_value'], 10, 3);
         \add_filter('acf/format_value/type=image', [$image_field_type, 'format_value'], 10, 3);
         \add_filter('acf/format_value/type=gallery', [$gallery_field_type, 'format_value'], 10, 3);

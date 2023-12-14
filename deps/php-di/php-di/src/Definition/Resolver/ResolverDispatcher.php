@@ -1,18 +1,18 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Resolver;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Resolver;
 
-use Devkit\Plugin\Deps\DI\Definition\ArrayDefinition;
-use Devkit\Plugin\Deps\DI\Definition\DecoratorDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Definition;
-use Devkit\Plugin\Deps\DI\Definition\EnvironmentVariableDefinition;
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidDefinition;
-use Devkit\Plugin\Deps\DI\Definition\FactoryDefinition;
-use Devkit\Plugin\Deps\DI\Definition\InstanceDefinition;
-use Devkit\Plugin\Deps\DI\Definition\ObjectDefinition;
-use Devkit\Plugin\Deps\DI\Definition\SelfResolvingDefinition;
-use Devkit\Plugin\Deps\DI\Proxy\ProxyFactory;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ArrayDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\DecoratorDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\EnvironmentVariableDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\FactoryDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\InstanceDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\ObjectDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\SelfResolvingDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Proxy\ProxyFactory;
 use Psr\Container\ContainerInterface;
 /**
  * Dispatches to more specific resolvers.

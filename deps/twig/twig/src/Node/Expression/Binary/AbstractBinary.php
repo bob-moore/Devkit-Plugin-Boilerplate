@@ -9,11 +9,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Node\Expression\Binary;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Binary;
 
-use Devkit\Plugin\Deps\Twig\Compiler;
-use Devkit\Plugin\Deps\Twig\Node\Expression\AbstractExpression;
-use Devkit\Plugin\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Compiler;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\AbstractExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
 /** @internal */
 abstract class AbstractBinary extends AbstractExpression
 {

@@ -8,16 +8,16 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig;
+namespace PLUGIN_NAMESPACE\Deps\Twig;
 
-use Devkit\Plugin\Deps\Twig\Error\RuntimeError;
-use Devkit\Plugin\Deps\Twig\Extension\ExtensionInterface;
-use Devkit\Plugin\Deps\Twig\Extension\GlobalsInterface;
-use Devkit\Plugin\Deps\Twig\Extension\StagingExtension;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Binary\AbstractBinary;
-use Devkit\Plugin\Deps\Twig\Node\Expression\Unary\AbstractUnary;
-use Devkit\Plugin\Deps\Twig\NodeVisitor\NodeVisitorInterface;
-use Devkit\Plugin\Deps\Twig\TokenParser\TokenParserInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\RuntimeError;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\ExtensionInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\GlobalsInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\StagingExtension;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Binary\AbstractBinary;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\Unary\AbstractUnary;
+use PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor\NodeVisitorInterface;
+use PLUGIN_NAMESPACE\Deps\Twig\TokenParser\TokenParserInterface;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  *

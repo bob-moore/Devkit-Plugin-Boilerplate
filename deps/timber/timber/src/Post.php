@@ -1,10 +1,10 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 use SimpleXMLElement;
-use Devkit\Plugin\Deps\Timber\Factory\PostFactory;
-use Devkit\Plugin\Deps\Timber\Factory\UserFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\PostFactory;
+use PLUGIN_NAMESPACE\Deps\Timber\Factory\UserFactory;
 use WP_Post;
 /**
  * Class Post
@@ -933,7 +933,7 @@ class Post extends CoreEntity implements DatedInterface, Setupable
         global $overridden_cpage, $user_ID;
         $overridden_cpage = \false;
         $commenter = \wp_get_current_commenter();
-        $comment_author_email = $commenter['comment_author_email'];
+        $comment_AUTHOR_NAME = $commenter['comment_AUTHOR_NAME'];
         $args = ['status' => $status, 'order' => $order, 'type' => $type];
         if ($count > 0) {
             $args['number'] = $count;
@@ -943,10 +943,10 @@ class Post extends CoreEntity implements DatedInterface, Setupable
         }
         if ($user_ID) {
             $args['include_unapproved'] = [$user_ID];
-        } elseif (!empty($comment_author_email)) {
-            $args['include_unapproved'] = [$comment_author_email];
-        } elseif (\function_exists('wp_get_unapproved_comment_author_email')) {
-            $unapproved_email = \wp_get_unapproved_comment_author_email();
+        } elseif (!empty($comment_AUTHOR_NAME)) {
+            $args['include_unapproved'] = [$comment_AUTHOR_NAME];
+        } elseif (\function_exists('wp_get_unapproved_comment_AUTHOR_NAME')) {
+            $unapproved_email = \wp_get_unapproved_comment_AUTHOR_NAME();
             if ($unapproved_email) {
                 $args['include_unapproved'] = [$unapproved_email];
             }

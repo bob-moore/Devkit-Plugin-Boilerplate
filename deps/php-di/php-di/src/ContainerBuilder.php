@@ -1,18 +1,18 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI;
+namespace PLUGIN_NAMESPACE\Deps\DI;
 
-use Devkit\Plugin\Deps\DI\Compiler\Compiler;
-use Devkit\Plugin\Deps\DI\Definition\Source\AttributeBasedAutowiring;
-use Devkit\Plugin\Deps\DI\Definition\Source\DefinitionArray;
-use Devkit\Plugin\Deps\DI\Definition\Source\DefinitionFile;
-use Devkit\Plugin\Deps\DI\Definition\Source\DefinitionSource;
-use Devkit\Plugin\Deps\DI\Definition\Source\NoAutowiring;
-use Devkit\Plugin\Deps\DI\Definition\Source\ReflectionBasedAutowiring;
-use Devkit\Plugin\Deps\DI\Definition\Source\SourceCache;
-use Devkit\Plugin\Deps\DI\Definition\Source\SourceChain;
-use Devkit\Plugin\Deps\DI\Proxy\ProxyFactory;
+use PLUGIN_NAMESPACE\Deps\DI\Compiler\Compiler;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\AttributeBasedAutowiring;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\DefinitionArray;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\DefinitionFile;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\DefinitionSource;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\NoAutowiring;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\ReflectionBasedAutowiring;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\SourceCache;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Source\SourceChain;
+use PLUGIN_NAMESPACE\Deps\DI\Proxy\ProxyFactory;
 use InvalidArgumentException;
 use Psr\Container\ContainerInterface;
 /**

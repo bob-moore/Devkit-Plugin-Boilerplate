@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Error;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Error;
 
-use Devkit\Plugin\Deps\Twig\Source;
-use Devkit\Plugin\Deps\Twig\Template;
+use PLUGIN_NAMESPACE\Deps\Twig\Source;
+use PLUGIN_NAMESPACE\Deps\Twig\Template;
 /**
  * Twig base exception.
  *

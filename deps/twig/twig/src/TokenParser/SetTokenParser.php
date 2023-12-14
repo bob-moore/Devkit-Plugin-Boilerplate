@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\TokenParser;
+namespace PLUGIN_NAMESPACE\Deps\Twig\TokenParser;
 
-use Devkit\Plugin\Deps\Twig\Error\SyntaxError;
-use Devkit\Plugin\Deps\Twig\Node\Node;
-use Devkit\Plugin\Deps\Twig\Node\SetNode;
-use Devkit\Plugin\Deps\Twig\Token;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\SyntaxError;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\SetNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Token;
 /**
  * Defines a variable.
  *

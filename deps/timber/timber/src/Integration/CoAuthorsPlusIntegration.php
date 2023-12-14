@@ -1,9 +1,9 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Integration;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Integration;
 
-use Devkit\Plugin\Deps\CoAuthors_Plus;
-use Devkit\Plugin\Deps\Timber\Integration\CoAuthorsPlus\CoAuthorsPlusUser;
+use PLUGIN_NAMESPACE\Deps\CoAuthors_Plus;
+use PLUGIN_NAMESPACE\Deps\Timber\Integration\CoAuthorsPlus\CoAuthorsPlusUser;
 use WP_User;
 /** @internal */
 class CoAuthorsPlusIntegration implements IntegrationInterface
@@ -32,14 +32,14 @@ class CoAuthorsPlusIntegration implements IntegrationInterface
     public function authors($author, $post)
     {
         $authors = [];
-        $cauthors = \Devkit\Plugin\Deps\get_coauthors($post->ID);
+        $cauthors = \PLUGIN_NAMESPACE\Deps\get_coauthors($post->ID);
         foreach ($cauthors as $author) {
             $uid = $this->get_user_uid($author);
             if ($uid) {
-                $authors[] = \Devkit\Plugin\Deps\Timber\Timber::get_user($uid);
+                $authors[] = \PLUGIN_NAMESPACE\Deps\Timber\Timber::get_user($uid);
             } else {
                 $wp_user = new WP_User($author);
-                $user = \Devkit\Plugin\Deps\Timber\Timber::get_user($wp_user);
+                $user = \PLUGIN_NAMESPACE\Deps\Timber\Timber::get_user($wp_user);
                 $user->import($wp_user->data);
                 unset($user->user_pass);
                 $user->id = $user->ID = (int) $wp_user->ID;

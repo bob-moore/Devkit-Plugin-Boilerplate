@@ -8,23 +8,23 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\NodeVisitor;
+namespace PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor;
 
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Extension\EscaperExtension;
-use Devkit\Plugin\Deps\Twig\Node\AutoEscapeNode;
-use Devkit\Plugin\Deps\Twig\Node\BlockNode;
-use Devkit\Plugin\Deps\Twig\Node\BlockReferenceNode;
-use Devkit\Plugin\Deps\Twig\Node\DoNode;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ConditionalExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ConstantExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\FilterExpression;
-use Devkit\Plugin\Deps\Twig\Node\Expression\InlinePrint;
-use Devkit\Plugin\Deps\Twig\Node\ImportNode;
-use Devkit\Plugin\Deps\Twig\Node\ModuleNode;
-use Devkit\Plugin\Deps\Twig\Node\Node;
-use Devkit\Plugin\Deps\Twig\Node\PrintNode;
-use Devkit\Plugin\Deps\Twig\NodeTraverser;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\EscaperExtension;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\AutoEscapeNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\BlockNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\BlockReferenceNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\DoNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ConditionalExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ConstantExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\FilterExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\InlinePrint;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\ImportNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\ModuleNode;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\PrintNode;
+use PLUGIN_NAMESPACE\Deps\Twig\NodeTraverser;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  *

@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Integration;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Integration;
 
 use WP_Post;
 use WPML_LS_Menu_Item;
@@ -29,7 +29,7 @@ class WpmlIntegration implements IntegrationInterface
     }
     public function menu_object_id_filter($id)
     {
-        return \Devkit\Plugin\Deps\wpml_object_id_filter($id, 'nav_menu');
+        return \PLUGIN_NAMESPACE\Deps\wpml_object_id_filter($id, 'nav_menu');
     }
     public function menu_item_objects_filter(array $items)
     {

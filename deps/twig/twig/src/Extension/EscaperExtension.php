@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Devkit\Plugin\Deps\Twig\Extension;
+namespace PLUGIN_NAMESPACE\Deps\Twig\Extension;
 
-use Devkit\Plugin\Deps\Twig\FileExtensionEscapingStrategy;
-use Devkit\Plugin\Deps\Twig\NodeVisitor\EscaperNodeVisitor;
-use Devkit\Plugin\Deps\Twig\TokenParser\AutoEscapeTokenParser;
-use Devkit\Plugin\Deps\Twig\TwigFilter;
+use PLUGIN_NAMESPACE\Deps\Twig\FileExtensionEscapingStrategy;
+use PLUGIN_NAMESPACE\Deps\Twig\NodeVisitor\EscaperNodeVisitor;
+use PLUGIN_NAMESPACE\Deps\Twig\TokenParser\AutoEscapeTokenParser;
+use PLUGIN_NAMESPACE\Deps\Twig\TwigFilter;
 /** @internal */
 final class EscaperExtension extends AbstractExtension
 {
@@ -114,14 +114,14 @@ final class EscaperExtension extends AbstractExtension
         }
     }
 }
-namespace Devkit\Plugin\Deps;
+namespace PLUGIN_NAMESPACE\Deps;
 
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Error\RuntimeError;
-use Devkit\Plugin\Deps\Twig\Extension\EscaperExtension;
-use Devkit\Plugin\Deps\Twig\Markup;
-use Devkit\Plugin\Deps\Twig\Node\Expression\ConstantExpression;
-use Devkit\Plugin\Deps\Twig\Node\Node;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Error\RuntimeError;
+use PLUGIN_NAMESPACE\Deps\Twig\Extension\EscaperExtension;
+use PLUGIN_NAMESPACE\Deps\Twig\Markup;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Expression\ConstantExpression;
+use PLUGIN_NAMESPACE\Deps\Twig\Node\Node;
 /**
  * Marks a variable as being safe.
  *

@@ -1,8 +1,8 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Laravel\SerializableClosure\Signers;
+namespace PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Signers;
 
-use Devkit\Plugin\Deps\Laravel\SerializableClosure\Contracts\Signer;
+use PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Contracts\Signer;
 /** @internal */
 class Hmac implements Signer
 {

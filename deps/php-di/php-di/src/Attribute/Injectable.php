@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Attribute;
+namespace PLUGIN_NAMESPACE\Deps\DI\Attribute;
 
 use Attribute;
 /**

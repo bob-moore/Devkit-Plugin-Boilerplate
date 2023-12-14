@@ -1,8 +1,8 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Integration;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Integration;
 
-use Devkit\Plugin\Deps\Timber\Integration\CLI\TimberCommand;
+use PLUGIN_NAMESPACE\Deps\Timber\Integration\CLI\TimberCommand;
 use WP_CLI;
 /**
  * Class WpCliIntegration

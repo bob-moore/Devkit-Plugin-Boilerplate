@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Laravel\SerializableClosure\Support;
+namespace PLUGIN_NAMESPACE\Deps\Laravel\SerializableClosure\Support;
 
 use SplObjectStorage;
 /** @internal */

@@ -1,8 +1,8 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Composer\Installers;
+namespace PLUGIN_NAMESPACE\Deps\Composer\Installers;
 
-use Devkit\Plugin\Deps\Composer\Package\PackageInterface;
+use PLUGIN_NAMESPACE\Deps\Composer\Package\PackageInterface;
 /** @internal */
 class OxidInstaller extends BaseInstaller
 {

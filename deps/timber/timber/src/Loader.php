@@ -1,13 +1,13 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 use InvalidArgumentException;
-use Devkit\Plugin\Deps\Timber\Cache\Cleaner;
-use Devkit\Plugin\Deps\Twig\CacheExtension;
-use Devkit\Plugin\Deps\Twig\Environment;
-use Devkit\Plugin\Deps\Twig\Loader\FilesystemLoader;
-use Devkit\Plugin\Deps\Twig\TwigFunction;
+use PLUGIN_NAMESPACE\Deps\Timber\Cache\Cleaner;
+use PLUGIN_NAMESPACE\Deps\Twig\CacheExtension;
+use PLUGIN_NAMESPACE\Deps\Twig\Environment;
+use PLUGIN_NAMESPACE\Deps\Twig\Loader\FilesystemLoader;
+use PLUGIN_NAMESPACE\Deps\Twig\TwigFunction;
 /** @internal */
 class Loader
 {
@@ -332,9 +332,9 @@ class Loader
             }
             $environment_options['cache'] = $twig_cache_loc;
         }
-        $twig = new \Devkit\Plugin\Deps\Twig\Environment($this->get_loader(), $environment_options);
+        $twig = new \PLUGIN_NAMESPACE\Deps\Twig\Environment($this->get_loader(), $environment_options);
         if (\WP_DEBUG) {
-            $twig->addExtension(new \Devkit\Plugin\Deps\Twig\Extension\DebugExtension());
+            $twig->addExtension(new \PLUGIN_NAMESPACE\Deps\Twig\Extension\DebugExtension());
         } else {
             $twig->addFunction(new TwigFunction('dump', function () {
                 return null;
@@ -502,8 +502,8 @@ class Loader
      */
     private function _get_cache_extension()
     {
-        $key_generator = new \Devkit\Plugin\Deps\Timber\Cache\KeyGenerator();
-        $cache_provider = new \Devkit\Plugin\Deps\Timber\Cache\WPObjectCacheAdapter($this);
+        $key_generator = new \PLUGIN_NAMESPACE\Deps\Timber\Cache\KeyGenerator();
+        $cache_provider = new \PLUGIN_NAMESPACE\Deps\Timber\Cache\WPObjectCacheAdapter($this);
         $cache_lifetime = \apply_filters('timber/cache/extension/lifetime', 0);
         $cache_strategy = new CacheExtension\CacheStrategy\GenerationalCacheStrategy($cache_provider, $key_generator, $cache_lifetime);
         $cache_extension = new CacheExtension\Extension($cache_strategy);

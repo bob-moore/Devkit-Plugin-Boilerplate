@@ -1,10 +1,10 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber\Factory;
+namespace PLUGIN_NAMESPACE\Deps\Timber\Factory;
 
 use InvalidArgumentException;
-use Devkit\Plugin\Deps\Timber\Comment;
-use Devkit\Plugin\Deps\Timber\CoreInterface;
+use PLUGIN_NAMESPACE\Deps\Timber\Comment;
+use PLUGIN_NAMESPACE\Deps\Timber\CoreInterface;
 use WP_Comment;
 use WP_Comment_Query;
 /**

@@ -1,19 +1,19 @@
 <?php
 
 declare (strict_types=1);
-namespace Devkit\Plugin\Deps\DI\Definition\Resolver;
+namespace PLUGIN_NAMESPACE\Deps\DI\Definition\Resolver;
 
-use Devkit\Plugin\Deps\DI\Definition\Definition;
-use Devkit\Plugin\Deps\DI\Definition\Exception\InvalidDefinition;
-use Devkit\Plugin\Deps\DI\Definition\FactoryDefinition;
-use Devkit\Plugin\Deps\DI\Invoker\FactoryParameterResolver;
-use Devkit\Plugin\Deps\Invoker\Exception\NotCallableException;
-use Devkit\Plugin\Deps\Invoker\Exception\NotEnoughParametersException;
-use Devkit\Plugin\Deps\Invoker\Invoker;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\AssociativeArrayResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\DefaultValueResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\NumericArrayResolver;
-use Devkit\Plugin\Deps\Invoker\ParameterResolver\ResolverChain;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Definition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\Exception\InvalidDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Definition\FactoryDefinition;
+use PLUGIN_NAMESPACE\Deps\DI\Invoker\FactoryParameterResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\Exception\NotCallableException;
+use PLUGIN_NAMESPACE\Deps\Invoker\Exception\NotEnoughParametersException;
+use PLUGIN_NAMESPACE\Deps\Invoker\Invoker;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\AssociativeArrayResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\DefaultValueResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\NumericArrayResolver;
+use PLUGIN_NAMESPACE\Deps\Invoker\ParameterResolver\ResolverChain;
 use Psr\Container\ContainerInterface;
 /**
  * Resolves a factory definition to a value.

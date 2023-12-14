@@ -1,6 +1,6 @@
 <?php
 
-namespace Devkit\Plugin\Deps\Timber;
+namespace PLUGIN_NAMESPACE\Deps\Timber;
 
 /**
  * The PostExcerpt class lets a user modify a post preview/excerpt to their liking.
