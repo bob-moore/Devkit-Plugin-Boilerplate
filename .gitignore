@@ -41,3 +41,5 @@ Thumbs.db
 ####################
 node_modules
 vendor
+composer-deps.lock
+composer.lock
