@@ -20,7 +20,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Devkit\\Plugin\\" : "inc"
+			"PLUGIN_NAMESPACE\\" : "inc"
 		}
 	},
 	"require-dev": {
@@ -44,7 +44,7 @@
     },
 	"extra": {
 		"wpify-scoper": {
-			"prefix": "Devkit\\Plugin\\Deps",
+			"prefix": "PLUGIN_NAMESPACE\\Deps",
 			"folder": "deps",
 			"globals": [
 			  "wordpress",

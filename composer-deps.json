@@ -19,6 +19,6 @@
         }
     ],
 	"require": {
-		"devkit/wp-framework-core": "^1.0"
+		"devkit/wp-framework-core": "dev-main"
 	}
 }
