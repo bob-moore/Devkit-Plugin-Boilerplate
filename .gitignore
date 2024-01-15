@@ -36,10 +36,8 @@ Thumbs.db
 *.idea
 *.sublime-project
 *.sublime-workspace
-*.code-workspace
 # dev dependencies #
 ####################
 node_modules
 vendor
-composer-deps.lock
-composer.lock
+build
