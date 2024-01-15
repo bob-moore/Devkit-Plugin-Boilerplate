@@ -21,7 +21,7 @@ use Devkit\Plugin\Deps\Devkit\WPCore,
  *
  * @subpackage Route
  */
-class Frontend extends WPCore\Abstracts\Mountable implements
+class Login extends WPCore\Abstracts\Mountable implements
 	WPCore\Interfaces\Uses\Scripts,
 	WPCore\Interfaces\Uses\Styles
 {
@@ -36,22 +36,22 @@ class Frontend extends WPCore\Abstracts\Mountable implements
 	#[OnMount]
 	public function mount(): void
 	{
-		add_action( 'wp_enqueue_scripts', [ $this, 'enqueueAssets' ] );
+		add_action( 'login_enqueue_scripts', [ $this, 'enqueueAssets' ] );
 	}
 	/**
-	 * Enqueue admin styles and JS bundles
+	 * Enqueue styles and JS bundles
 	 *
 	 * @return void
 	 */
 	public function enqueueAssets(): void
 	{
 		$this->enqueueScript(
-			'frontend',
-			'frontend/bundle.js'
+			'login',
+			'login/bundle.js'
 		);
 		$this->enqueueStyle(
-			'frontend',
-			'frontend/bundle.css'
+			'login',
+			'login/bundle.css'
 		);
 	}
 }

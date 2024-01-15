@@ -1,18 +1,20 @@
 {
 	"name": "devkit_plugin",
 	"version": "4.0.1",
-	"description": "custom plugin",
-	"author": "AUTHOR_NAME <bob.moore@midwestfamilymadison.com>",
+	"description": "Cornerstone mu-plugin for Midwest Family Madison",
+	"author": "Bob Moore <bob.moore@midwestfamilymadison.com>",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"mu-plugin",
 		"project",
 		"wordpress"
 	],
-	"homepage": "https://www.midwestfamilymadison.com",
+	"homepage": "https://github.com/bob-moore/Devkit-Plugin-Boilerplate",
 	"repository": "https://github.com/MDMDevOps/{PROJECT}",
 	"bugs": "https://github.com/MDMDevOps/{PROJECT}/issues",
 	"devDependencies": {
+		"@wordpress/block-editor": "^12.16.0",
+		"@wordpress/i18n": "^4.48.0",
 		"@wordpress/scripts": "^26.17.0",
 		"autoprefixer": "^10.4.14",
 		"clean-webpack-plugin": "^4.0.0",
@@ -31,10 +33,10 @@
 		"compile": "npm run compile:blocks && npm run compile:assets",
 		"watch": "npm run watch:blocks & npm run watch:assets",
 		"watch:hot": "npm run watch:blocks & npm run watch:assets -- --hot",
-		"compile:blocks": "wp-scripts build --webpack-src-dir=./blocks --webpack-copy-php --config blocks.config.js",
-		"watch:blocks": "wp-scripts start --webpack-src-dir=./blocks --webpack-copy-php --config blocks.config.js",
-		"compile:assets": "wp-scripts build --webpack-src-dir=./",
-		"watch:assets": "wp-scripts start --webpack-src-dir=./",
+		"compile:blocks": "wp-scripts build --webpack-src-dir=./blocks --webpack-copy-php --config blocks/webpack.config.js",
+		"watch:blocks": "wp-scripts start --webpack-src-dir=./blocks --webpack-copy-php --config blocks/webpack.config.js",
+		"compile:assets": "wp-scripts build --webpack-src-dir=./assets --config ./assets/webpack.config.js",
+		"watch:assets": "wp-scripts start --webpack-src-dir=./assets --config ./assets/webpack.config.js",
 		"check-engines": "wp-scripts check-engines",
 		"check-licenses": "wp-scripts check-licenses --prod --gpl2",
 		"format": "wp-scripts format",
@@ -53,5 +55,10 @@
 		"last 3 version",
 		"> 1%",
 		"not dead"
-	]
+	],
+	"dependencies": {
+		"@mantine/core": "^7.4.1",
+		"@mui/material": "^5.15.4",
+		"@wordpress/api-fetch": "^6.45.0"
+	}
 }

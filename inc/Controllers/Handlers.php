@@ -1,32 +1,32 @@
 <?php
 /**
- * Service Controller
+ * Handler Controller
  *
  * PHP Version 8.0.28
  *
- * @package PLUGIN_SLUG
- * @author  AUTHOR_NAME <AUTHOR_EMAIL>
+ * @package devkit_plugin
+ * @author  Bob Moore <bob@bobmoore.dev>
  * @license GPL-2.0+ <http://www.gnu.org/licenses/gpl-2.0.txt>
  * @link    https://github.com/bob-moore/Devkit-Plugin-Boilerplate
  * @since   1.0.0
  */
 
-namespace PLUGIN_NAMESPACE\Controllers;
+namespace Devkit\Plugin\Controllers;
 
-use PLUGIN_NAMESPACE\Handlers as Handler;
+use Devkit\Plugin\Handlers as Handler;
 
-use PLUGIN_NAMESPACE\Deps\Devkit\WPCore,
-	PLUGIN_NAMESPACE\Deps\Devkit\WPCore\DI\OnMount,
-	PLUGIN_NAMESPACE\Deps\Devkit\WPCore\DI\ContainerBuilder;
+use Devkit\Plugin\Deps\Devkit\WPCore,
+	Devkit\Plugin\Deps\Devkit\WPCore\DI\OnMount,
+	Devkit\Plugin\Deps\Devkit\WPCore\DI\ContainerBuilder;
 
 /**
- * Service controller class
+ * Handler controller class
  *
  * Controls and orchestrates the execution of specific handlers.
  *
  * @subpackage Controllers
  */
-class Handlers extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\Controller
+class Handlers extends WPCore\Controllers\Handlers
 {
 	/**
 	 * Get definitions that should be added to the service container
@@ -35,35 +35,49 @@ class Handlers extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\C
 	 */
 	public static function getServiceDefinitions(): array
 	{
-		return [
-			Handler\Editor::class => ContainerBuilder::autowire(),
-			Handler\Images::class => ContainerBuilder::autowire(),
-		];
+		return array_merge(
+			parent::getServiceDefinitions(),
+			[
+				Handler\Posts::class  => ContainerBuilder::autowire(),
+				Handler\Terms::class  => ContainerBuilder::autowire(),
+				Handler\Blocks::class => ContainerBuilder::autowire(),
+			]
+		);
 	}
 	/**
-	 * Actions to perform when the class is loaded
+	 * Mount blocks handler
 	 *
-	 * @param Handler\Editor $handler : instance of editor service.
+	 * @param Handler\Blocks $handler : instance of block handler.
 	 *
 	 * @return void
 	 */
 	#[OnMount]
-	public function mountEditor( Handler\Editor $handler ): void
+	public function mountBlocks( Handler\Blocks $handler ): void
 	{
-		add_action( 'after_setup_theme', [ $handler, 'themeSupport' ] );
-		add_action( 'after_setup_theme', [ $handler, 'editorStylesheet' ], 99999 );
+		add_action( 'init', [ $handler, 'registerBlocks' ] );
 	}
 	/**
-	 * Actions to work with images
+	 * Mount post handler
 	 *
-	 * @param Handler\Images $handler : instance of images handler.
+	 * @param Handler\Posts $handler : instance of block handler.
 	 *
 	 * @return void
 	 */
 	#[OnMount]
-	public function mountIMages( Handler\Images $handler ): void
+	public function mountPosts( Handler\Posts $handler ): void
 	{
-		add_filter( 'after_setup_theme', [ $handler, 'addImageSizes' ] );
-		add_filter( 'image_size_names_choose', [ $handler, 'addImageSizeLabels' ] );
+		add_action( 'init', [ $handler, 'registerPostTypes' ] );
+	}
+	/**
+	 * Mount term/taxonomy handler
+	 *
+	 * @param Handler\Terms $handler : instance of block handler.
+	 *
+	 * @return void
+	 */
+	#[OnMount]
+	public function mountTaxonomies( Handler\Terms $handler ): void
+	{
+		add_action( 'init', [ $handler, 'registerTaxonomies' ] );
 	}
 }

@@ -1,5 +1,0 @@
-<?php
-
-namespace Devkit\WPCore\DL;
-
-class Container {}
