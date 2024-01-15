@@ -1,5 +1,5 @@
 {
-    "name": "plugin/name",
+    "name": "devkit/plugin",
     "description": "Custom Plugin Description",
     "type": "library",
     "license": "GPL-2.0+ <http://www.gnu.org/licenses/gpl-2.0.txt>",
