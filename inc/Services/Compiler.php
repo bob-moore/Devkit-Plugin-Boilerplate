@@ -49,11 +49,11 @@ class Compiler extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\S
 	 */
 	protected string $views_dir = '';
 	/**
-	 * Directory path to assets
+	 * Directory path to blocks
 	 *
 	 * @var string
 	 */
-	protected string $assets_dir = '';
+	protected string $blocks_dir = '';
 	/**
 	 * Array for timber context
 	 *
@@ -75,14 +75,14 @@ class Compiler extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\S
 	/**
 	 * Setter for the assets directory
 	 *
-	 * @param string $asset_dir : path to assets directory.
+	 * @param string $blocks_dir : path to assets directory.
 	 *
 	 * @return void
 	 */
 	#[Inject]
-	public function setAssetsDirectory( #[Inject( 'config.assets.dir' )] string $asset_dir ): void
+	public function setBlocksDirectory( #[Inject( 'config.blocks.dir' )] string $blocks_dir ): void
 	{
-		$this->assets_dir = $asset_dir;
+		$this->blocks_dir = $blocks_dir;
 	}
 	/**
 	 * Add the 'post' to context, if not already present.
@@ -94,9 +94,13 @@ class Compiler extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\S
 	public function context( array $context = [] ): array
 	{
 		if ( empty( $this->context ) ) {
-			$this->context = Timber::context( $context );
+			$this->context = apply_filters( "{$this->package}_context", [] );
 		}
-		return apply_filters( "{$this->package}_context", $this->context );
+		array_merge(
+			Timber::context(),
+			$this->context,
+			$context
+		);
 	}
 	/**
 	 * Filters the default locations array for twig to search for templates. We never use some paths, so there's
@@ -126,7 +130,7 @@ class Compiler extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\S
 			array_push(
 				$template_directories,
 				trailingslashit( $this->dir( $this->views_dir ) ),
-				trailingslashit( $this->dir( $this->assets_dir ) )
+				trailingslashit( $this->dir( $this->blocks_dir ) )
 			);
 
 			$template_directories = array_filter( $template_directories, [ $this, 'shouldIncludeDir' ] );
