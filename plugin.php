@@ -14,7 +14,7 @@
  * Plugin Name: Devkit Plugin Boilerplate
  * Plugin URI:  https://github.com/bob-moore/Devkit-Plugin-Boilerplate
  * Description: PLUGIN_DESCRIPTION
- * Version:     1.0.0
+ * Version:     1.0.3
  * Author:      Bob Moore
  * Author URI:  https://www.bobmoore.dev
  * Requires at least: 6.0
