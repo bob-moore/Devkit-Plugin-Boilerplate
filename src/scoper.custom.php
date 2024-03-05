@@ -35,7 +35,8 @@ function customize_php_scoper_config( array $config ): array
 	$config['exclude-constants'] = array_merge(
 		$config['exclude-constants'] ?? [],
 		$scoper->getSymbols( 'wordpress', 'constants' ),
-		$scoper->getSymbols( 'woocommerce', 'constants' )
+		$scoper->getSymbols( 'woocommerce', 'constants' ),
+		['WP_PLUGIN_DIR']
 	);
 
 	$config['exclude-classes'] = array_merge(
